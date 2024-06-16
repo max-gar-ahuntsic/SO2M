@@ -1,0 +1,313 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.27)__24-06-16---INTEGRATION\\24-06-15E---(THIS-SO-FAR)_take-3--codefirst dbcontext de sabrine\\this\\SO2M\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{62D72F5A-61B5-4A57-AF3E-EDC5BFF5711E}|SO2M.csproj|w:\\1.55)--dev-tc\\cours-site-rencont\\5.27)__24-06-16---integration\\24-06-15e---(this-so-far)_take-3--codefirst dbcontext de sabrine\\this\\so2m\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{62D72F5A-61B5-4A57-AF3E-EDC5BFF5711E}|SO2M.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62D72F5A-61B5-4A57-AF3E-EDC5BFF5711E}|SO2M.csproj|w:\\1.55)--dev-tc\\cours-site-rencont\\5.27)__24-06-16---integration\\24-06-15e---(this-so-far)_take-3--codefirst dbcontext de sabrine\\this\\so2m\\so2m.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{62D72F5A-61B5-4A57-AF3E-EDC5BFF5711E}|SO2M.csproj|solutionrelative:so2m.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62D72F5A-61B5-4A57-AF3E-EDC5BFF5711E}|SO2M.csproj|w:\\1.55)--dev-tc\\cours-site-rencont\\5.27)__24-06-16---integration\\24-06-15e---(this-so-far)_take-3--codefirst dbcontext de sabrine\\this\\so2m\\controllers\\recherchepartenairecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62D72F5A-61B5-4A57-AF3E-EDC5BFF5711E}|SO2M.csproj|solutionrelative:controllers\\recherchepartenairecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62D72F5A-61B5-4A57-AF3E-EDC5BFF5711E}|SO2M.csproj|w:\\1.55)--dev-tc\\cours-site-rencont\\5.27)__24-06-16---integration\\24-06-15e---(this-so-far)_take-3--codefirst dbcontext de sabrine\\this\\so2m\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{62D72F5A-61B5-4A57-AF3E-EDC5BFF5711E}|SO2M.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62D72F5A-61B5-4A57-AF3E-EDC5BFF5711E}|SO2M.csproj|w:\\1.55)--dev-tc\\cours-site-rencont\\5.27)__24-06-16---integration\\24-06-15e---(this-so-far)_take-3--codefirst dbcontext de sabrine\\this\\so2m\\models\\so2mscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62D72F5A-61B5-4A57-AF3E-EDC5BFF5711E}|SO2M.csproj|solutionrelative:models\\so2mscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62D72F5A-61B5-4A57-AF3E-EDC5BFF5711E}|SO2M.csproj|w:\\1.55)--dev-tc\\cours-site-rencont\\5.27)__24-06-16---integration\\24-06-15e---(this-so-far)_take-3--codefirst dbcontext de sabrine\\this\\so2m\\models\\photo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62D72F5A-61B5-4A57-AF3E-EDC5BFF5711E}|SO2M.csproj|solutionrelative:models\\photo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62D72F5A-61B5-4A57-AF3E-EDC5BFF5711E}|SO2M.csproj|w:\\1.55)--dev-tc\\cours-site-rencont\\5.27)__24-06-16---integration\\24-06-15e---(this-so-far)_take-3--codefirst dbcontext de sabrine\\this\\so2m\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62D72F5A-61B5-4A57-AF3E-EDC5BFF5711E}|SO2M.csproj|solutionrelative:models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62D72F5A-61B5-4A57-AF3E-EDC5BFF5711E}|SO2M.csproj|w:\\1.55)--dev-tc\\cours-site-rencont\\5.27)__24-06-16---integration\\24-06-15e---(this-so-far)_take-3--codefirst dbcontext de sabrine\\this\\so2m\\models\\utilisateur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62D72F5A-61B5-4A57-AF3E-EDC5BFF5711E}|SO2M.csproj|solutionrelative:models\\utilisateur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62D72F5A-61B5-4A57-AF3E-EDC5BFF5711E}|SO2M.csproj|w:\\1.55)--dev-tc\\cours-site-rencont\\5.27)__24-06-16---integration\\24-06-15e---(this-so-far)_take-3--codefirst dbcontext de sabrine\\this\\so2m\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62D72F5A-61B5-4A57-AF3E-EDC5BFF5711E}|SO2M.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62D72F5A-61B5-4A57-AF3E-EDC5BFF5711E}|SO2M.csproj|w:\\1.55)--dev-tc\\cours-site-rencont\\5.27)__24-06-16---integration\\24-06-15e---(this-so-far)_take-3--codefirst dbcontext de sabrine\\this\\so2m\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62D72F5A-61B5-4A57-AF3E-EDC5BFF5711E}|SO2M.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62D72F5A-61B5-4A57-AF3E-EDC5BFF5711E}|SO2M.csproj|w:\\1.55)--dev-tc\\cours-site-rencont\\5.27)__24-06-16---integration\\24-06-15e---(this-so-far)_take-3--codefirst dbcontext de sabrine\\this\\so2m\\models\\critererecherche.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62D72F5A-61B5-4A57-AF3E-EDC5BFF5711E}|SO2M.csproj|solutionrelative:models\\critererecherche.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62D72F5A-61B5-4A57-AF3E-EDC5BFF5711E}|SO2M.csproj|w:\\1.55)--dev-tc\\cours-site-rencont\\5.27)__24-06-16---integration\\24-06-15e---(this-so-far)_take-3--codefirst dbcontext de sabrine\\this\\so2m\\controllers\\utilisateurcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62D72F5A-61B5-4A57-AF3E-EDC5BFF5711E}|SO2M.csproj|solutionrelative:controllers\\utilisateurcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62D72F5A-61B5-4A57-AF3E-EDC5BFF5711E}|SO2M.csproj|w:\\1.55)--dev-tc\\cours-site-rencont\\5.27)__24-06-16---integration\\24-06-15e---(this-so-far)_take-3--codefirst dbcontext de sabrine\\this\\so2m\\controllers\\pagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62D72F5A-61B5-4A57-AF3E-EDC5BFF5711E}|SO2M.csproj|solutionrelative:controllers\\pagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62D72F5A-61B5-4A57-AF3E-EDC5BFF5711E}|SO2M.csproj|w:\\1.55)--dev-tc\\cours-site-rencont\\5.27)__24-06-16---integration\\24-06-15e---(this-so-far)_take-3--codefirst dbcontext de sabrine\\this\\so2m\\view\\accueil\\accueil.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{62D72F5A-61B5-4A57-AF3E-EDC5BFF5711E}|SO2M.csproj|solutionrelative:view\\accueil\\accueil.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62D72F5A-61B5-4A57-AF3E-EDC5BFF5711E}|SO2M.csproj|w:\\1.55)--dev-tc\\cours-site-rencont\\5.27)__24-06-16---integration\\24-06-15e---(this-so-far)_take-3--codefirst dbcontext de sabrine\\this\\so2m\\controllers\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62D72F5A-61B5-4A57-AF3E-EDC5BFF5711E}|SO2M.csproj|solutionrelative:controllers\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62D72F5A-61B5-4A57-AF3E-EDC5BFF5711E}|SO2M.csproj|w:\\1.55)--dev-tc\\cours-site-rencont\\5.27)__24-06-16---integration\\24-06-15e---(this-so-far)_take-3--codefirst dbcontext de sabrine\\this\\so2m\\view\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{62D72F5A-61B5-4A57-AF3E-EDC5BFF5711E}|SO2M.csproj|solutionrelative:view\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62D72F5A-61B5-4A57-AF3E-EDC5BFF5711E}|SO2M.csproj|w:\\1.55)--dev-tc\\cours-site-rencont\\5.27)__24-06-16---integration\\24-06-15e---(this-so-far)_take-3--codefirst dbcontext de sabrine\\this\\so2m\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{62D72F5A-61B5-4A57-AF3E-EDC5BFF5711E}|SO2M.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.27)__24-06-16---INTEGRATION\\24-06-15E---(THIS-SO-FAR)_take-3--codefirst dbcontext de sabrine\\SO2M\\Models\\Photo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.27)__24-06-16---INTEGRATION\\24-06-15E---(THIS-SO-FAR)_take-3--codefirst dbcontext de sabrine\\this\\SO2M\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.27)__24-06-16---INTEGRATION\\24-06-15E---(THIS-SO-FAR)_take-3--codefirst dbcontext de sabrine\\this\\SO2M\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-05T23:26:46.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Utilisateur.cs",
+              "DocumentMoniker": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.27)__24-06-16---INTEGRATION\\24-06-15E---(THIS-SO-FAR)_take-3--codefirst dbcontext de sabrine\\this\\SO2M\\Models\\Utilisateur.cs",
+              "RelativeDocumentMoniker": "Models\\Utilisateur.cs",
+              "ToolTip": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.27)__24-06-16---INTEGRATION\\24-06-15E---(THIS-SO-FAR)_take-3--codefirst dbcontext de sabrine\\this\\SO2M\\Models\\Utilisateur.cs",
+              "RelativeToolTip": "Models\\Utilisateur.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAiwDAAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T17:52:08.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SO2M",
+              "DocumentMoniker": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.27)__24-06-16---INTEGRATION\\24-06-15E---(THIS-SO-FAR)_take-3--codefirst dbcontext de sabrine\\this\\SO2M\\SO2M.csproj",
+              "RelativeDocumentMoniker": "SO2M.csproj",
+              "ToolTip": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.27)__24-06-16---INTEGRATION\\24-06-15E---(THIS-SO-FAR)_take-3--codefirst dbcontext de sabrine\\this\\SO2M\\SO2M.csproj",
+              "RelativeToolTip": "SO2M.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-12T16:35:27.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.27)__24-06-16---INTEGRATION\\24-06-15E---(THIS-SO-FAR)_take-3--codefirst dbcontext de sabrine\\this\\SO2M\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.27)__24-06-16---INTEGRATION\\24-06-15E---(THIS-SO-FAR)_take-3--codefirst dbcontext de sabrine\\this\\SO2M\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-12T16:36:08.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RecherchePartenaireController.cs",
+              "DocumentMoniker": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.27)__24-06-16---INTEGRATION\\24-06-15E---(THIS-SO-FAR)_take-3--codefirst dbcontext de sabrine\\this\\SO2M\\Controllers\\RecherchePartenaireController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RecherchePartenaireController.cs",
+              "ToolTip": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.27)__24-06-16---INTEGRATION\\24-06-15E---(THIS-SO-FAR)_take-3--codefirst dbcontext de sabrine\\this\\SO2M\\Controllers\\RecherchePartenaireController.cs",
+              "RelativeToolTip": "Controllers\\RecherchePartenaireController.cs",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAWwHwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T14:30:39.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Message.cs",
+              "DocumentMoniker": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.27)__24-06-16---INTEGRATION\\24-06-15E---(THIS-SO-FAR)_take-3--codefirst dbcontext de sabrine\\this\\SO2M\\Models\\Message.cs",
+              "RelativeDocumentMoniker": "Models\\Message.cs",
+              "ToolTip": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.27)__24-06-16---INTEGRATION\\24-06-15E---(THIS-SO-FAR)_take-3--codefirst dbcontext de sabrine\\this\\SO2M\\Models\\Message.cs",
+              "RelativeToolTip": "Models\\Message.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAADwvwsAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T17:36:59.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Photo.cs",
+              "DocumentMoniker": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.27)__24-06-16---INTEGRATION\\24-06-15E---(THIS-SO-FAR)_take-3--codefirst dbcontext de sabrine\\this\\SO2M\\Models\\Photo.cs",
+              "RelativeDocumentMoniker": "Models\\Photo.cs",
+              "ToolTip": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.27)__24-06-16---INTEGRATION\\24-06-15E---(THIS-SO-FAR)_take-3--codefirst dbcontext de sabrine\\this\\SO2M\\Models\\Photo.cs",
+              "RelativeToolTip": "Models\\Photo.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAIwA8AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T17:25:59.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "So2msContext.cs",
+              "DocumentMoniker": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.27)__24-06-16---INTEGRATION\\24-06-15E---(THIS-SO-FAR)_take-3--codefirst dbcontext de sabrine\\this\\SO2M\\Models\\So2msContext.cs",
+              "RelativeDocumentMoniker": "Models\\So2msContext.cs",
+              "ToolTip": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.27)__24-06-16---INTEGRATION\\24-06-15E---(THIS-SO-FAR)_take-3--codefirst dbcontext de sabrine\\this\\SO2M\\Models\\So2msContext.cs",
+              "RelativeToolTip": "Models\\So2msContext.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAmwCAAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T00:26:02.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.27)__24-06-16---INTEGRATION\\24-06-15E---(THIS-SO-FAR)_take-3--codefirst dbcontext de sabrine\\this\\SO2M\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
+              "ToolTip": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.27)__24-06-16---INTEGRATION\\24-06-15E---(THIS-SO-FAR)_take-3--codefirst dbcontext de sabrine\\this\\SO2M\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ErrorViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T17:58:40.351Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.27)__24-06-16---INTEGRATION\\24-06-15E---(THIS-SO-FAR)_take-3--codefirst dbcontext de sabrine\\this\\SO2M\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.27)__24-06-16---INTEGRATION\\24-06-15E---(THIS-SO-FAR)_take-3--codefirst dbcontext de sabrine\\this\\SO2M\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAACUAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T14:11:31.925Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CritereRecherche.cs",
+              "DocumentMoniker": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.27)__24-06-16---INTEGRATION\\24-06-15E---(THIS-SO-FAR)_take-3--codefirst dbcontext de sabrine\\this\\SO2M\\Models\\CritereRecherche.cs",
+              "RelativeDocumentMoniker": "Models\\CritereRecherche.cs",
+              "ToolTip": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.27)__24-06-16---INTEGRATION\\24-06-15E---(THIS-SO-FAR)_take-3--codefirst dbcontext de sabrine\\this\\SO2M\\Models\\CritereRecherche.cs",
+              "RelativeToolTip": "Models\\CritereRecherche.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAwwB0AAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T02:41:28.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UtilisateurController.cs",
+              "DocumentMoniker": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.27)__24-06-16---INTEGRATION\\24-06-15E---(THIS-SO-FAR)_take-3--codefirst dbcontext de sabrine\\this\\SO2M\\Controllers\\UtilisateurController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UtilisateurController.cs",
+              "ToolTip": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.27)__24-06-16---INTEGRATION\\24-06-15E---(THIS-SO-FAR)_take-3--codefirst dbcontext de sabrine\\this\\SO2M\\Controllers\\UtilisateurController.cs",
+              "RelativeToolTip": "Controllers\\UtilisateurController.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAqwFYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T16:22:19.308Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PageController.cs",
+              "DocumentMoniker": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.27)__24-06-16---INTEGRATION\\24-06-15E---(THIS-SO-FAR)_take-3--codefirst dbcontext de sabrine\\this\\SO2M\\Controllers\\PageController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PageController.cs",
+              "ToolTip": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.27)__24-06-16---INTEGRATION\\24-06-15E---(THIS-SO-FAR)_take-3--codefirst dbcontext de sabrine\\this\\SO2M\\Controllers\\PageController.cs",
+              "RelativeToolTip": "Controllers\\PageController.cs",
+              "ViewState": "AQIAAFwAAAAAAAAAAAAswGUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T13:44:07.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "accueil.html",
+              "DocumentMoniker": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.27)__24-06-16---INTEGRATION\\24-06-15E---(THIS-SO-FAR)_take-3--codefirst dbcontext de sabrine\\this\\SO2M\\View\\accueil\\accueil.html",
+              "RelativeDocumentMoniker": "View\\accueil\\accueil.html",
+              "ToolTip": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.27)__24-06-16---INTEGRATION\\24-06-15E---(THIS-SO-FAR)_take-3--codefirst dbcontext de sabrine\\this\\SO2M\\View\\accueil\\accueil.html",
+              "RelativeToolTip": "View\\accueil\\accueil.html",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABcAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-06-16T13:59:00.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LoginModel.cs",
+              "DocumentMoniker": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.27)__24-06-16---INTEGRATION\\24-06-15E---(THIS-SO-FAR)_take-3--codefirst dbcontext de sabrine\\this\\SO2M\\Controllers\\LoginModel.cs",
+              "RelativeDocumentMoniker": "Controllers\\LoginModel.cs",
+              "ToolTip": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.27)__24-06-16---INTEGRATION\\24-06-15E---(THIS-SO-FAR)_take-3--codefirst dbcontext de sabrine\\this\\SO2M\\Controllers\\LoginModel.cs",
+              "RelativeToolTip": "Controllers\\LoginModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAA6wAAAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T17:25:51.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Photo.cs",
+              "DocumentMoniker": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.27)__24-06-16---INTEGRATION\\24-06-15E---(THIS-SO-FAR)_take-3--codefirst dbcontext de sabrine\\SO2M\\Models\\Photo.cs",
+              "RelativeDocumentMoniker": "..\\..\\SO2M\\Models\\Photo.cs",
+              "ToolTip": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.27)__24-06-16---INTEGRATION\\24-06-15E---(THIS-SO-FAR)_take-3--codefirst dbcontext de sabrine\\SO2M\\Models\\Photo.cs",
+              "RelativeToolTip": "..\\..\\SO2M\\Models\\Photo.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAUAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T01:56:42.052Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "login.html",
+              "DocumentMoniker": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.27)__24-06-16---INTEGRATION\\24-06-15E---(THIS-SO-FAR)_take-3--codefirst dbcontext de sabrine\\this\\SO2M\\View\\login.html",
+              "RelativeDocumentMoniker": "View\\login.html",
+              "ToolTip": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.27)__24-06-16---INTEGRATION\\24-06-15E---(THIS-SO-FAR)_take-3--codefirst dbcontext de sabrine\\this\\SO2M\\View\\login.html",
+              "RelativeToolTip": "View\\login.html",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAAkAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-06-16T03:32:56.544Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.27)__24-06-16---INTEGRATION\\24-06-15E---(THIS-SO-FAR)_take-3--codefirst dbcontext de sabrine\\this\\SO2M\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.27)__24-06-16---INTEGRATION\\24-06-15E---(THIS-SO-FAR)_take-3--codefirst dbcontext de sabrine\\this\\SO2M\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-05T23:22:57.502Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

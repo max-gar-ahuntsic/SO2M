@@ -1,0 +1,30 @@
+using Microsoft.EntityFrameworkCore;
+
+public class DatabaseContext : DbContext
+{
+    public DbSet<Card> Cards { get; set; }
+
+    public DatabaseContext(DbContextOptions<DatabaseContext> options) : base(options)
+    {
+    }
+}
+
+public void ConfigureServices(IServiceCollection services)
+{
+    services.AddDbContext<DatabaseContext>(options =>
+        options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+    
+    services.AddControllers();
+    
+    services.AddCors(options =>
+    {
+        options.AddPolicy("AllowAll", builder =>
+            builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+    });
+}
+
+public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+{
+    app.UseCors("AllowAll");
+    // Other configurations
+}

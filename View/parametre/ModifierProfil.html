@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifier Profil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">SO2M</div>
+            <div class="nav-center">
+                <a href="/page/modifierProfil" class="nav-link"><i class="fas fa-cog" id="settings-button"></i></a>
+                <a href="/page/recherchePartenaire" class="nav-link"><i class="fas fa-search" id="search-button"></i></a>
+                <a href="/page/photos" class="nav-link"><i class="fas fa-camera" id="photo-button"></i></a>
+                <a href="/page/favoris" class="nav-link"><i class="fas fa-star" id="favorites-button"></i></a>
+                <a href="/page/accueilProfil" class="nav-link"><i class="fas fa-user-circle" id="profil-button"></i></a>
+                <a href="/page/accueil" class="nav-link"><i class="fas fa-home" id="home-button"></i></a>
+                <a href="/page/messagerie" class="nav-link"><i class="fas fa-envelope" id="message-button"></i></a>
+                <a href="/page/login" class="nav-link">class="nav-link"><i class="fas fa-sign-out-alt" id="logout-button"></i></a>
+            </div>
+            <div class="user-info">
+                <img id="profile-photo" src="" alt="Photo de Profil">
+                <span id="username"></span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="form-container">
+            <h2>Modifier Profil</h2>
+            <form id="modificationProfilForm">
+                <div class="form-group">
+                    <label for="nom">Nom</label>
+                    <input type="text" class="form-control" id="nom" name="nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" class="form-control" id="prenom" name="prenom" required>
+                </div>
+                <div class="form-group">
+                    <label for="username">Nom d'utilisateur</label>
+                    <input type="text" class="form-control" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" class="form-control" id="password" name="motDePasse">
+                </div>
+                <div class="form-group">
+                    <label for="age">Âge</label>
+                    <input type="number" class="form-control" id="age" name="age" required>
+                </div>
+                <div class="form-group">
+                    <label for="genre">Genre</label>
+                    <select class="form-control" id="genre" name="genre" required>
+                        <option value="Homme">Homme</option>
+                        <option value="Femme">Femme</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="niveauAcademique">Niveau Académique</label>
+                    <select class="form-control" id="niveauAcademique" name="niveauAcademique" required>
+                        <option value="Secondaire">Secondaire</option>
+                        <option value="Collégial">Collégial</option>
+                        <option value="Universitaire">Universitaire</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="orientationS">Orientation sexuelle</label>
+                    <select class="form-control" id="orientationS" name="orientationS" required>
+                        <option value="Hétérosexuel">Hétérosexuel</option>
+                        <option value="Homosexuel">Homosexuel</option>
+                        <option value="Bisexuel">Bisexuel</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="courriel">Courriel</label>
+                    <input type="email" class="form-control" id="courriel" name="courriel" required>
+                </div>
+                <button type="button" onclick="submitForm()" class="btn btn-primary btn-block">Enregistrer</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            fetch('/api/utilisateur/profil', {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${localStorage.getItem('token')}`
+                }
+            })
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('nom').value = data.nom;
+                    document.getElementById('prenom').value = data.prenom;
+                    document.getElementById('username').value = data.username;
+                    document.getElementById('age').value = data.age;
+                    document.getElementById('genre').value = data.genre;
+                    document.getElementById('niveauAcademique').value = data.niveauAcademique;
+                    document.getElementById('orientationS').value = data.orientationS;
+                    document.getElementById('courriel').value = data.courriel;
+                })
+                .catch(error => {
+                    console.error('Erreur lors de la récupération des données du profil:', error);
+                });
+        });
+
+        function submitForm() {
+            const formData = new FormData(document.getElementById('modificationProfilForm'));
+
+            fetch('/api/utilisateur/modificationProfil', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Authorization': `Bearer ${localStorage.getItem('token')}`
+                }
+            })
+                .then(response => {
+                    if (response.ok) {
+                        alert('Profil mis à jour avec succès.');
+                    } else {
+                        console.error('Erreur lors de la modification du profil:', response.statusText);
+                    }
+                })
+                .catch(error => {
+                    console.error('Erreur lors de la modification du profil:', error);
+                });
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2024 SO2M. Tous droits réservés.</p>
+    </footer>
+</body>
+
+</html>
