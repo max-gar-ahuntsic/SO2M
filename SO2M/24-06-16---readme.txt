@@ -1,0 +1,18 @@
+
+
+nouvelle bd à exécuter
+
+mesure temporaire:  pour aller à la page d'accueil à partir de Swagger: cliquer 'terms of service'
+
+répertoire pour le frontend: so2m/view
+
+ex d'url:  http://localhost:5163/page/login
+
+rajouter une route:  dans PageController
+
+Sabrine:  j'ai pris tes fichiers qui étaient sous 'view' et non 'frontend' 
+
+Osm: messagerie AI pourrait être mergée avec la page du Profil Public ?
+
+Osm:  'présentation match': voir répertoire 'galerie/..'
+

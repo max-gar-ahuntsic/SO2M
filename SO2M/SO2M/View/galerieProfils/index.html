@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Dynamic Responsive Cards Matchs Site de Rencontre</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card__container" id="cardContainer">
+            <!-- Cards will be injected here dynamically -->
+        </div>
+    </div>
+
+    <script>
+        // Sample data for cards
+        const cards = [
+            { imgSrc: 'assets/img/avatar-1.png', description: 'Arturo, Hetero', title: 'Vie ton rêve', link: '#' },
+            { imgSrc: 'assets/img/avatar-2.png', description: 'Poaul, Bi', title: 'Miroi ou cuillière?', link: '#' },
+            { imgSrc: 'assets/img/avatar-3.png', description: 'Lucy, ?', title: 'Finding Neno', link: '#' },
+            { imgSrc: 'assets/img/avatar-6_NB.png', description: 'Simon, Hetero', title: 'Me voilà!', link: '#' },
+            { imgSrc: 'assets/img/avatar-4.png', description: 'Lucyo, Hetero', title: 'Hey, you!', link: '#' },
+            { imgSrc: 'assets/img/avatar-5.png', description: 'Ana, ?', title: 'You and me', link: '#' },
+            { imgSrc: 'assets/img/avatar-7_NB.png', description: 'Christopher, Un serviteur', title: 'Je crois à nous', link: '#' }, 
+            { imgSrc: 'assets/img/avatar-11_NB.png', description: 'Amir, Gay', title: 'On peu essayer', link: '#' },           
+            // Add more card data here
+        ];
+
+        const cardContainer = document.getElementById('cardContainer');
+
+        cards.forEach(card => {
+            const article = document.createElement('article');
+            article.classList.add('card__article');
+            article.innerHTML = `
+                <img src="${card.imgSrc}" alt="image" class="card__img">
+                <div class="card__data">
+                    <span class="card__description">${card.description}</span>
+                    <h2 class="card__title">${card.title}</h2>
+                    <a href="${card.link}" class="card__button">Read More</a>
+                </div>
+            `;
+            cardContainer.appendChild(article);
+        });
+    </script>
+</body>
+</html>

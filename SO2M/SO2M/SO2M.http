@@ -1,0 +1,6 @@
+@SO2M_HostAddress = http://localhost:5163
+
+GET {{SO2M_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titre de la Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">SO2M</div>
+            <div class="nav-center">
+                <a href="/page/modifierProfil" class="nav-link"><i class="fas fa-cog" id="settings-button"></i></a>
+                <a href="/page/recherchePartenaire" class="nav-link"><i class="fas fa-search" id="search-button"></i></a>
+                <a href="/page/photos" class="nav-link"><i class="fas fa-camera" id="photo-button"></i></a>
+                <a href="/page/favoris" class="nav-link"><i class="fas fa-star" id="favorites-button"></i></a>
+                <a href="/page/accueilProfil" class="nav-link"><i class="fas fa-user-circle" id="profil-button"></i></a>
+                <a href="/page/accueil" class="nav-link"><i class="fas fa-home" id="home-button"></i></a>
+                <a href="/page/messagerie" class="nav-link"><i class="fas fa-envelope" id="message-button"></i></a>
+                <a href="/page/login" class="nav-link">class="nav-link"><i class="fas fa-sign-out-alt" id="logout-button"></i></a>
+            </div>
+            <div class="user-info">
+                <img id="profile-photo" src="" alt="Photo de Profil">
+                <span id="username"></span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="conversation">
+            <!-- Les messages apparaîtront ici -->
+        </div>
+        <textarea id="message-contenu" placeholder="Tapez votre message ici..."></textarea>
+        <button id="envoyer-button">Envoyer</button>
+    </main>
+    <footer>
+        <p>&copy; 2024 SO2M. Tous droits réservés.</p>
+    </footer>
+    <script src="messagerie.js"></script>
+</body>
+
+</html>
