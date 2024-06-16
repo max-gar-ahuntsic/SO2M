@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Critères De Recherche</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">SO2M</div>
+            <div class="nav-center">
+                <a href="/page/modifierProfil" class="nav-link"><i class="fas fa-cog" id="settings-button"></i></a>
+                <a href="/page/recherchePartenaire" class="nav-link"><i class="fas fa-search" id="search-button"></i></a>
+                <a href="/page/photos" class="nav-link"><i class="fas fa-camera" id="photo-button"></i></a>
+                <a href="/page/favoris" class="nav-link"><i class="fas fa-star" id="favorites-button"></i></a>
+                <a href="/page/accueilProfil" class="nav-link"><i class="fas fa-user-circle" id="profil-button"></i></a>
+                <a href="/page/accueil" class="nav-link"><i class="fas fa-home" id="home-button"></i></a>
+                <a href="/page/messagerie" class="nav-link"><i class="fas fa-envelope" id="message-button"></i></a>
+                <a href="/page/login" class="nav-link">class="nav-link"><i class="fas fa-sign-out-alt" id="logout-button"></i></a>
+            </div>
+            <div class="user-info">
+                <img id="profile-photo" src="" alt="Photo de Profil">
+                <span id="username"></span>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="form-container">
+            <h2>Recherche Partenaire</h2>
+            <form id="modificationProfilForm">
+                
+                <div class="form-group">
+                    <label for="ageMin">Age minimal</label>
+                    <input type="int" class="form-control" id="ageMin" name="ageMin" required>
+                </div>
+                <div class="form-group">
+                    <label for="ageMax">Age maximal</label>
+                    <input type="int" class="form-control" id="ageMax" name="ageMax" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="ville"> ville</label>
+                    <input type="text" class="form-control" id="ville" name="ville" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="rayonRecherche">Rayon de recherche</label>
+                    <input type="int" class="form-control" id="rayonRecherche" name="rayonRecherche" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="niveauAcademique">Niveau Académique</label>
+                    <select class="form-control" id="niveauAcademique" name="niveauAcademique" required>
+                        <option value="Secondaire">Secondaire</option>
+                        <option value="Collégial">Collégial</option>
+                        <option value="Universitaire">Universitaire</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="genre">Genre</label>
+                    <select class="form-control" id="genre" name="genre" required>
+                        <option value="Homme">Homme</option>
+                        <option value="Femme">Femme</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="orientationS">Orientation sexuelle</label>
+                    <select class="form-control" id="orientationS" name="orientationS" required>
+                        <option value="Hétérosexuel">Hétérosexuel</option>
+                        <option value="Homosexuel">Homosexuel</option>
+                        <option value="Bisexuel">Bisexuel</option>
+                    </select>
+                </div>
+
+
+                <button type="button" onclick="submitForm()" class="btn btn-primary btn-block">Enregistrer</button>
+
+                <br><br><br><br><br><br>
+
+            </form>
+        </div>
+    </div>
+
+    <script>
+     
+ 
+
+        let Id=1 // ** A AJUSTER APRÈS QUE L'AUTHENTIFICATION SERAIT IMPLÉMENTÉE **  
+
+        document.addEventListener('DOMContentLoaded', () => {
+            fetch('/api/recherchePart/getCriteres/' + Id, 
+            //fetch('/api/recherchePart/getCriteres?' + new URLSearchParams({Id: 1}), 
+            {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${localStorage.getItem('token')}`
+                }
+            })
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('genre').value = data.genre;
+                    document.getElementById('ageMin').value = data.ageMin;
+                    document.getElementById('ageMax').value = data.ageMax;
+                    document.getElementById('niveauAcademique').value = data.niveauAcademique;
+                    document.getElementById('orientationS').value = data.orientationS;
+                    document.getElementById('ville').value = data.ville;
+                    document.getElementById('rayonRecherche').value = data.rayonRecherche;
+                 })
+                .catch(error => {
+                    console.error('Erreur lors de la récupération des données du profil:', error);
+                });
+        });
+
+        function submitForm() {
+            let Id=1 // ** A AJUSTER APRÈS QUE L'AUTHENTIFICATION SERAIT IMPLÉMENTÉE **  
+
+            const formData = new FormData(document.getElementById('modificationProfilForm'));
+            
+
+            fetch('/api/recherchePart/modifierCriteres/'+Id, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Authorization': `Bearer ${localStorage.getItem('token')}`
+                }
+            })
+                .then(response => {
+                    if (response.ok) {
+                        console.log(' mis à jour avec succès.');
+                        window.location.href = '/page/galerieProfils'; // Redirection en cas de succès
+                    } else { 
+                        console.error('Erreur lors de la modification :', response.statusText);
+                    }
+                })
+                .catch(error => {
+                    console.error('Erreur lors de la modification:', error);
+                });
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2024 SO2M. Tous droits réservés.</p>
+    </footer>
+</body>
+
+</html>
