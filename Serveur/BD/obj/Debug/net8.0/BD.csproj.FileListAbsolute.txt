@@ -1,0 +1,22 @@
+C:\xampp\htdocs\creation site web transactionnel\ProjetIntegrateur sabrine 2024-06-10\ProjetIntegrateur\Serveur\BD\bin\Debug\net8.0\BD.deps.json
+C:\xampp\htdocs\creation site web transactionnel\ProjetIntegrateur sabrine 2024-06-10\ProjetIntegrateur\Serveur\BD\bin\Debug\net8.0\BD.dll
+C:\xampp\htdocs\creation site web transactionnel\ProjetIntegrateur sabrine 2024-06-10\ProjetIntegrateur\Serveur\BD\bin\Debug\net8.0\BD.pdb
+C:\xampp\htdocs\creation site web transactionnel\ProjetIntegrateur sabrine 2024-06-10\ProjetIntegrateur\Serveur\BD\obj\Debug\net8.0\BD.GeneratedMSBuildEditorConfig.editorconfig
+C:\xampp\htdocs\creation site web transactionnel\ProjetIntegrateur sabrine 2024-06-10\ProjetIntegrateur\Serveur\BD\obj\Debug\net8.0\BD.AssemblyInfoInputs.cache
+C:\xampp\htdocs\creation site web transactionnel\ProjetIntegrateur sabrine 2024-06-10\ProjetIntegrateur\Serveur\BD\obj\Debug\net8.0\BD.AssemblyInfo.cs
+C:\xampp\htdocs\creation site web transactionnel\ProjetIntegrateur sabrine 2024-06-10\ProjetIntegrateur\Serveur\BD\obj\Debug\net8.0\BD.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\creation site web transactionnel\ProjetIntegrateur sabrine 2024-06-10\ProjetIntegrateur\Serveur\BD\obj\Debug\net8.0\BD.dll
+C:\xampp\htdocs\creation site web transactionnel\ProjetIntegrateur sabrine 2024-06-10\ProjetIntegrateur\Serveur\BD\obj\Debug\net8.0\refint\BD.dll
+C:\xampp\htdocs\creation site web transactionnel\ProjetIntegrateur sabrine 2024-06-10\ProjetIntegrateur\Serveur\BD\obj\Debug\net8.0\BD.pdb
+C:\xampp\htdocs\creation site web transactionnel\ProjetIntegrateur sabrine 2024-06-10\ProjetIntegrateur\Serveur\BD\obj\Debug\net8.0\ref\BD.dll
+C:\xampp\htdocs\creation site web transactionnel\ProjetIntegrateur sabrine 2024-06-13\ProjetIntegrateur sabrine 2024-06-13\ProjetIntegrateur\Serveur\BD\bin\Debug\net8.0\BD.deps.json
+C:\xampp\htdocs\creation site web transactionnel\ProjetIntegrateur sabrine 2024-06-13\ProjetIntegrateur sabrine 2024-06-13\ProjetIntegrateur\Serveur\BD\bin\Debug\net8.0\BD.dll
+C:\xampp\htdocs\creation site web transactionnel\ProjetIntegrateur sabrine 2024-06-13\ProjetIntegrateur sabrine 2024-06-13\ProjetIntegrateur\Serveur\BD\bin\Debug\net8.0\BD.pdb
+C:\xampp\htdocs\creation site web transactionnel\ProjetIntegrateur sabrine 2024-06-13\ProjetIntegrateur sabrine 2024-06-13\ProjetIntegrateur\Serveur\BD\obj\Debug\net8.0\BD.GeneratedMSBuildEditorConfig.editorconfig
+C:\xampp\htdocs\creation site web transactionnel\ProjetIntegrateur sabrine 2024-06-13\ProjetIntegrateur sabrine 2024-06-13\ProjetIntegrateur\Serveur\BD\obj\Debug\net8.0\BD.AssemblyInfoInputs.cache
+C:\xampp\htdocs\creation site web transactionnel\ProjetIntegrateur sabrine 2024-06-13\ProjetIntegrateur sabrine 2024-06-13\ProjetIntegrateur\Serveur\BD\obj\Debug\net8.0\BD.AssemblyInfo.cs
+C:\xampp\htdocs\creation site web transactionnel\ProjetIntegrateur sabrine 2024-06-13\ProjetIntegrateur sabrine 2024-06-13\ProjetIntegrateur\Serveur\BD\obj\Debug\net8.0\BD.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\creation site web transactionnel\ProjetIntegrateur sabrine 2024-06-13\ProjetIntegrateur sabrine 2024-06-13\ProjetIntegrateur\Serveur\BD\obj\Debug\net8.0\BD.dll
+C:\xampp\htdocs\creation site web transactionnel\ProjetIntegrateur sabrine 2024-06-13\ProjetIntegrateur sabrine 2024-06-13\ProjetIntegrateur\Serveur\BD\obj\Debug\net8.0\refint\BD.dll
+C:\xampp\htdocs\creation site web transactionnel\ProjetIntegrateur sabrine 2024-06-13\ProjetIntegrateur sabrine 2024-06-13\ProjetIntegrateur\Serveur\BD\obj\Debug\net8.0\BD.pdb
+C:\xampp\htdocs\creation site web transactionnel\ProjetIntegrateur sabrine 2024-06-13\ProjetIntegrateur sabrine 2024-06-13\ProjetIntegrateur\Serveur\BD\obj\Debug\net8.0\ref\BD.dll

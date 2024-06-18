@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "rS2lfuNAf7t4G133dG5SP0q1/mRViDMz2LT2EdeoeDk=",
+  "Source": "SO2M",
+  "BasePath": "_content/SO2M",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "SO2M\\wwwroot",
+      "Source": "SO2M",
+      "ContentRoot": "C:\\xampp\\htdocs\\creation site web transactionnel\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur\\Serveur\\SO2M\\wwwroot\\",
+      "BasePath": "_content/SO2M",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\xampp\\htdocs\\creation site web transactionnel\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur\\Serveur\\SO2M\\wwwroot\\uploads\\jouri.jpg",
+      "SourceId": "SO2M",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\xampp\\htdocs\\creation site web transactionnel\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur\\Serveur\\SO2M\\wwwroot\\",
+      "BasePath": "_content/SO2M",
+      "RelativePath": "uploads/jouri.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\jouri.jpg"
+    }
+  ]
+}
