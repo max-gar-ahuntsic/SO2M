@@ -1,0 +1,287 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\xampp\\htdocs\\creation site web transactionnel\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur\\Serveur\\SO2M\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|c:\\xampp\\htdocs\\creation site web transactionnel\\projetintegrateur sabrine 2024-06-13\\projetintegrateur sabrine 2024-06-13\\projetintegrateur\\serveur\\so2m\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|solutionrelative:startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|c:\\xampp\\htdocs\\creation site web transactionnel\\projetintegrateur sabrine 2024-06-13\\projetintegrateur sabrine 2024-06-13\\projetintegrateur\\serveur\\so2m\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|c:\\xampp\\htdocs\\creation site web transactionnel\\projetintegrateur sabrine 2024-06-13\\projetintegrateur sabrine 2024-06-13\\projetintegrateur\\serveur\\so2m\\controllers\\recherchepartenairecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|solutionrelative:controllers\\recherchepartenairecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|c:\\xampp\\htdocs\\creation site web transactionnel\\projetintegrateur sabrine 2024-06-13\\projetintegrateur sabrine 2024-06-13\\projetintegrateur\\serveur\\so2m\\controllers\\parametrecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|solutionrelative:controllers\\parametrecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|c:\\xampp\\htdocs\\creation site web transactionnel\\projetintegrateur sabrine 2024-06-13\\projetintegrateur sabrine 2024-06-13\\projetintegrateur\\serveur\\so2m\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|solutionrelative:data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|c:\\xampp\\htdocs\\creation site web transactionnel\\projetintegrateur sabrine 2024-06-13\\projetintegrateur sabrine 2024-06-13\\projetintegrateur\\serveur\\so2m\\controllers\\utilisateurcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|solutionrelative:controllers\\utilisateurcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|c:\\xampp\\htdocs\\creation site web transactionnel\\projetintegrateur sabrine 2024-06-13\\projetintegrateur sabrine 2024-06-13\\projetintegrateur\\serveur\\so2m\\controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|solutionrelative:controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|c:\\xampp\\htdocs\\creation site web transactionnel\\projetintegrateur sabrine 2024-06-13\\projetintegrateur sabrine 2024-06-13\\projetintegrateur\\serveur\\so2m\\models\\critererecherche.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|solutionrelative:models\\critererecherche.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\xampp\\htdocs\\creation site web transactionnel\\24-06-11---SO2M_(view-et-fetch-fonctionnels (1)\\SO2M\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|c:\\xampp\\htdocs\\creation site web transactionnel\\projetintegrateur sabrine 2024-06-13\\projetintegrateur sabrine 2024-06-13\\projetintegrateur\\serveur\\so2m\\models\\utilisateur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|solutionrelative:models\\utilisateur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|c:\\xampp\\htdocs\\creation site web transactionnel\\projetintegrateur sabrine 2024-06-13\\projetintegrateur sabrine 2024-06-13\\projetintegrateur\\serveur\\so2m\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|solutionrelative:models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|c:\\xampp\\htdocs\\creation site web transactionnel\\projetintegrateur sabrine 2024-06-13\\projetintegrateur sabrine 2024-06-13\\projetintegrateur\\serveur\\so2m\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|c:\\xampp\\htdocs\\creation site web transactionnel\\projetintegrateur sabrine 2024-06-13\\projetintegrateur sabrine 2024-06-13\\projetintegrateur\\serveur\\so2m\\models\\modelpsycologique.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|solutionrelative:models\\modelpsycologique.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|c:\\xampp\\htdocs\\creation site web transactionnel\\projetintegrateur sabrine 2024-06-13\\projetintegrateur sabrine 2024-06-13\\projetintegrateur\\serveur\\so2m\\models\\axe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|solutionrelative:models\\axe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|c:\\xampp\\htdocs\\creation site web transactionnel\\projetintegrateur sabrine 2024-06-13\\projetintegrateur sabrine 2024-06-13\\projetintegrateur\\serveur\\so2m\\models\\photo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|solutionrelative:models\\photo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|c:\\xampp\\htdocs\\creation site web transactionnel\\projetintegrateur sabrine 2024-06-13\\projetintegrateur sabrine 2024-06-13\\projetintegrateur\\serveur\\so2m\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RecherchePartenaireController.cs",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\creation site web transactionnel\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur\\Serveur\\SO2M\\Controllers\\RecherchePartenaireController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RecherchePartenaireController.cs",
+              "ToolTip": "C:\\xampp\\htdocs\\creation site web transactionnel\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur\\Serveur\\SO2M\\Controllers\\RecherchePartenaireController.cs",
+              "RelativeToolTip": "Controllers\\RecherchePartenaireController.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABgAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T05:40:47.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ParametreController.cs",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\creation site web transactionnel\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur\\Serveur\\SO2M\\Controllers\\ParametreController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ParametreController.cs",
+              "ToolTip": "C:\\xampp\\htdocs\\creation site web transactionnel\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur\\Serveur\\SO2M\\Controllers\\ParametreController.cs",
+              "RelativeToolTip": "Controllers\\ParametreController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T17:32:30.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Utilisateur.cs",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\creation site web transactionnel\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur\\Serveur\\SO2M\\Models\\Utilisateur.cs",
+              "RelativeDocumentMoniker": "Models\\Utilisateur.cs",
+              "ToolTip": "C:\\xampp\\htdocs\\creation site web transactionnel\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur\\Serveur\\SO2M\\Models\\Utilisateur.cs",
+              "RelativeToolTip": "Models\\Utilisateur.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAA8wBQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T20:11:34.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UtilisateurController.cs",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\creation site web transactionnel\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur\\Serveur\\SO2M\\Controllers\\UtilisateurController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UtilisateurController.cs",
+              "ToolTip": "C:\\xampp\\htdocs\\creation site web transactionnel\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur\\Serveur\\SO2M\\Controllers\\UtilisateurController.cs",
+              "RelativeToolTip": "Controllers\\UtilisateurController.cs",
+              "ViewState": "AQIAAG8AAAAAAAAAAAAowHwAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T17:37:47.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\creation site web transactionnel\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur\\Serveur\\SO2M\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\xampp\\htdocs\\creation site web transactionnel\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur\\Serveur\\SO2M\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAwwDYAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T22:35:26.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\creation site web transactionnel\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur\\Serveur\\SO2M\\Startup.cs",
+              "RelativeDocumentMoniker": "Startup.cs",
+              "ToolTip": "C:\\xampp\\htdocs\\creation site web transactionnel\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur\\Serveur\\SO2M\\Startup.cs",
+              "RelativeToolTip": "Startup.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAgwDEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T00:18:00.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MessageController.cs",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\creation site web transactionnel\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur\\Serveur\\SO2M\\Controllers\\MessageController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MessageController.cs",
+              "ToolTip": "C:\\xampp\\htdocs\\creation site web transactionnel\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur\\Serveur\\SO2M\\Controllers\\MessageController.cs",
+              "RelativeToolTip": "Controllers\\MessageController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC4AAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T17:18:58.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\creation site web transactionnel\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur\\Serveur\\SO2M\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\xampp\\htdocs\\creation site web transactionnel\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur\\Serveur\\SO2M\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-06T22:31:57.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\creation site web transactionnel\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur\\Serveur\\SO2M\\Data\\DataContext.cs",
+              "RelativeDocumentMoniker": "Data\\DataContext.cs",
+              "ToolTip": "C:\\xampp\\htdocs\\creation site web transactionnel\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur\\Serveur\\SO2M\\Data\\DataContext.cs",
+              "RelativeToolTip": "Data\\DataContext.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAADwvw8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T22:32:09.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Message.cs",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\creation site web transactionnel\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur\\Serveur\\SO2M\\Models\\Message.cs",
+              "RelativeDocumentMoniker": "Models\\Message.cs",
+              "ToolTip": "C:\\xampp\\htdocs\\creation site web transactionnel\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur\\Serveur\\SO2M\\Models\\Message.cs",
+              "RelativeToolTip": "Models\\Message.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T17:17:18.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\creation site web transactionnel\\24-06-11---SO2M_(view-et-fetch-fonctionnels (1)\\SO2M\\Program.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\24-06-11---SO2M_(view-et-fetch-fonctionnels (1)\\SO2M\\Program.cs",
+              "ToolTip": "C:\\xampp\\htdocs\\creation site web transactionnel\\24-06-11---SO2M_(view-et-fetch-fonctionnels (1)\\SO2M\\Program.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\24-06-11---SO2M_(view-et-fetch-fonctionnels (1)\\SO2M\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T19:28:58.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ModelPsycologique.cs",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\creation site web transactionnel\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur\\Serveur\\SO2M\\Models\\ModelPsycologique.cs",
+              "RelativeDocumentMoniker": "Models\\ModelPsycologique.cs",
+              "ToolTip": "C:\\xampp\\htdocs\\creation site web transactionnel\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur\\Serveur\\SO2M\\Models\\ModelPsycologique.cs",
+              "RelativeToolTip": "Models\\ModelPsycologique.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T23:08:18.475Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Axe.cs",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\creation site web transactionnel\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur\\Serveur\\SO2M\\Models\\Axe.cs",
+              "RelativeDocumentMoniker": "Models\\Axe.cs",
+              "ToolTip": "C:\\xampp\\htdocs\\creation site web transactionnel\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur\\Serveur\\SO2M\\Models\\Axe.cs",
+              "RelativeToolTip": "Models\\Axe.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T22:34:36.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Photo.cs",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\creation site web transactionnel\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur\\Serveur\\SO2M\\Models\\Photo.cs",
+              "RelativeDocumentMoniker": "Models\\Photo.cs",
+              "ToolTip": "C:\\xampp\\htdocs\\creation site web transactionnel\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur\\Serveur\\SO2M\\Models\\Photo.cs",
+              "RelativeToolTip": "Models\\Photo.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T01:13:12.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CritereRecherche.cs",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\creation site web transactionnel\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur\\Serveur\\SO2M\\Models\\CritereRecherche.cs",
+              "RelativeDocumentMoniker": "Models\\CritereRecherche.cs",
+              "ToolTip": "C:\\xampp\\htdocs\\creation site web transactionnel\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur\\Serveur\\SO2M\\Models\\CritereRecherche.cs",
+              "RelativeToolTip": "Models\\CritereRecherche.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAA5wAUAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T22:35:19.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\creation site web transactionnel\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur\\Serveur\\SO2M\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "C:\\xampp\\htdocs\\creation site web transactionnel\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur\\Serveur\\SO2M\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-06T22:31:54.15Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

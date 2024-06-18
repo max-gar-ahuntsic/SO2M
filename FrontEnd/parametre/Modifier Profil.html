@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifier Profil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">SO2M</div>
+            <div class="nav-center">
+                <a href="/FrontEnd/parametre/Modifier Profil.html" class="nav-link"><i class="fas fa-cog"
+                        id="settings-button"></i></a>
+                <a href="/FrontEnd\recherche\recherchePartenaire.html" class="nav-link"><i class="fas fa-search"
+                        id="search-button"></i></a>
+                <a href="/FrontEnd/photos/photos.html" class="nav-link"><i class="fas fa-camera"
+                        id="photo-button"></i></a>
+                <a href="/FrontEnd/favoris/favoris.html" class="nav-link"><i class="fas fa-star"
+                        id="favorites-button"></i></a>
+                <a href="/FrontEnd/matchs/matchs.html" class="nav-link"><i class="fas fa-user-circle"
+                        id="profil-button"></i></a>
+                <a href="/FrontEnd/accueil/accueil.html" class="nav-link"><i class="fas fa-home"
+                        id="home-button"></i></a>
+                <a href="/FrontEnd/messagerie/messagerie.html" class="nav-link"><i class="fas fa-envelope"
+                        id="message-button"></i></a>
+                <a href="/FrontEnd/wwwroot/login.html" class="nav-link"><i class="fas fa-sign-out-alt"
+                        id="logout-button"></i></a>
+            </div>
+            <div class="user-info">
+                <img id="profile-photo" src="" alt="Photo de Profil">
+                <span id="username"></span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="form-container">
+            <h2>Modifier Profil</h2>
+            <form id="modificationProfilForm">
+                <div class="form-group">
+                    <label for="nom">Nom</label>
+                    <input type="text" class="form-control" id="nom" name="nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" class="form-control" id="prenom" name="prenom" required>
+                </div>
+                <div class="form-group">
+                    <label for="username">Nom d'utilisateur</label>
+                    <input type="text" class="form-control" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" class="form-control" id="password" name="motDePasse">
+                </div>
+                <div class="form-group">
+                    <label for="age">Âge</label>
+                    <input type="number" class="form-control" id="age" name="age" required>
+                </div>
+                <div class="form-group">
+                    <label for="genre">Genre</label>
+                    <select class="form-control" id="genre" name="genre" required>
+                        <option value="Homme">Homme</option>
+                        <option value="Femme">Femme</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="niveauAcademique">Niveau Académique</label>
+                    <select class="form-control" id="niveauAcademique" name="niveauAcademique" required>
+                        <option value="Secondaire">Secondaire</option>
+                        <option value="Collégial">Collégial</option>
+                        <option value="Universitaire">Universitaire</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="orientationS">Orientation sexuelle</label>
+                    <select class="form-control" id="orientationS" name="orientationS" required>
+                        <option value="Hétérosexuel">Hétérosexuel</option>
+                        <option value="Homosexuel">Homosexuel</option>
+                        <option value="Bisexuel">Bisexuel</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="courriel">Courriel</label>
+                    <input type="email" class="form-control" id="courriel" name="courriel" required>
+                </div>
+                <button type="button" onclick="submitForm()" class="btn btn-primary btn-block">Enregistrer</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+       /*  document.addEventListener('DOMContentLoaded', () => {
+            // Vérifier si l'utilisateur est connecté
+            fetch('http://localhost:5160/api/utilisateur/current', {
+                credentials: 'same-origin' // Assurez-vous que les cookies de session sont envoyés
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        console.log('Redirection vers la page de connexion : ', response.statusText);
+                        window.location.href = '/FrontEnd/wwwroot/login.html';
+                        return;
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (data) {
+                        console.log('Données de l\'utilisateur : ', data);
+                        document.getElementById('username').textContent = data.Username;
+                        document.getElementById('profile-photo').src = data.ProfilePhotoURL;
+                    }
+                })
+                .catch(error => {
+                    console.error('Erreur lors de la récupération de l\'utilisateur :', error);
+                    window.location.href = '/FrontEnd/wwwroot/login.html';
+                });
+        }); */
+
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch('/api/utilisateur/profil', {
+                method: 'GET',
+                headers: {
+                    'Authorization': 'Bearer ' + sessionStorage.getItem('token') // Si vous utilisez un token d'authentification
+                }
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    document.getElementById('nom').value = data.nom;
+                    document.getElementById('prenom').value = data.prenom;
+                    document.getElementById('username').value = data.username;
+                    document.getElementById('age').value = data.age;
+                    document.getElementById('genre').value = data.genre;
+                    document.getElementById('niveauAcademique').value = data.niveauAcademique;
+                    document.getElementById('orientationS').value = data.orientationS;
+                    document.getElementById('courriel').value = data.courriel;
+                })
+                .catch(error => {
+                    console.error('Erreur lors de la récupération du profil :', error);
+                    alert('Erreur lors de la récupération du profil : ' + error.message);
+                });
+        });
+
+        function submitForm() {
+            var formData = new FormData(document.getElementById("modificationProfilForm"));
+
+            fetch('/api/utilisateur/modifierProfil', {
+                method: 'PUT',
+                body: formData,
+                headers: {
+                    'Authorization': 'Bearer ' + sessionStorage.getItem('token') // Si vous utilisez un token d'authentification
+                }
+            })
+                .then(response => {
+                    if (response.ok) {
+                        alert('Profil mis à jour avec succès');
+                    } else {
+                        return response.text().then(text => { throw new Error(text); });
+                    }
+                })
+                .catch(error => {
+                    console.error('Erreur lors de la mise à jour du profil :', error);
+                    alert('Erreur lors de la mise à jour du profil : ' + error.message);
+                });
+        }
+    </script>
+    <footer>
+        <div class="footer-top">
+            <div class="footer-column">
+                <h3>Group 07915</h3>
+                <p>9155, rue St-Hubert, Montréal, QC H2M 1Y8</p>
+                <p>(514) 389-5921</p>
+            </div>
+            <div class="footer-column">
+                <h3>En savoir plus</h3>
+                <ul>
+                    <li><a href="#">A propos</a></li>
+                    <li><a href="#">Contactez nous</a></li>
+                    <li><a href="#">Advertise</a></li>
+                    <li><a href="#">Terms de services</a></li>
+                    <li><a href="#">Politique de privacité</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Notre bulletin d'information</h3>
+                <p>Abonnez-vous à notre newsletter pour recevoir nos actualités et nos remises directement dans votre
+                    boîte
+                    de réception.</p>
+                <form action="#" method="post">
+                    <input type="email" placeholder="Email Address">
+                    <button type="submit">S'abonner</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 SO2M. Tous droits réservés.</p>
+            <p>Projet Integrateur développé par Group: SO2M</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <!-- <script src="user-info.js"></script> -->
+</body>
+
+</html>

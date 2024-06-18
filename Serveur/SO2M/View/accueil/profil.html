@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Utilisateur</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">SO2M</div>
+            <div class="nav-center">
+                <a href="/FrontEnd/parametre/Modifier Profil.html"class="nav-link"><i class="fas fa-cog" id="settings-button"></i></a>
+                <a href="/FrontEnd/recherche/recherche.html"class="nav-link"><i class="fas fa-search" id="search-button"></i></a>
+                <a href="/FrontEnd/photos/photos.html"class="nav-link"><i class="fas fa-camera" id="photo-button"></i></a>
+                <a href="/FrontEnd/favoris/favoris.html"class="nav-link"><i class="fas fa-star" id="favorites-button"></i></a>
+                <a href="/FrontEnd/accueil/profil.html"class="nav-link"><i class="fas fa-user-circle" id="profil-button"></i></a>
+                <a href="/FrontEnd/accueil/accueil.html"class="nav-link"><i class="fas fa-home" id="home-button"></i></a>
+                <a href="/FrontEnd/messagerie/messagerie.html"class="nav-link"><i class="fas fa-envelope" id="message-button"></i></a>
+                <a href="/FrontEnd/login/login.html"class="nav-link"><i class="fas fa-sign-out-alt" id="logout-button"></i></a>
+            </div>
+            <div class="user-info">
+                <img id="profile-photo" src="" alt="Photo de Profil">
+                <span id="username"></span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <h2>Profil Utilisateur</h2>
+            <form id="profile-form">
+                <div class="form-group">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" placeholder="Nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" id="prenom" placeholder="Prénom" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Âge</label>
+                    <input type="number" id="age" placeholder="Âge" required>
+                </div>
+                <button type="submit">Enregistrer</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 SO2M. Tous droits réservés.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\xampp\\htdocs\\creation site web transactionnel\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur\\Serveur\\SO2M\\wwwroot\\uploads\\jouri.jpg",
+      "PackagePath": "staticwebassets\\uploads\\jouri.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.SO2M.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.SO2M.props",
+      "PackagePath": "build\\SO2M.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.SO2M.props",
+      "PackagePath": "buildMultiTargeting\\SO2M.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.SO2M.props",
+      "PackagePath": "buildTransitive\\SO2M.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
