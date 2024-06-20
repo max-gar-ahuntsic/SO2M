@@ -87,7 +87,7 @@
                 </div>
 
 
-                <button type="button" onclick="submitForm()" class="btn btn-primary btn-block">Enregistrer</button>
+                <button type="button" onclick="submitForm()" class="btn btn-primary btn-block">Lancer Recherche</button>
 
                 <br><br><br><br><br><br>
 
@@ -102,7 +102,7 @@
         let Id = 1 // ** A AJUSTER APRÈS QUE L'AUTHENTIFICATION SERAIT IMPLÉMENTÉE **  
 
         document.addEventListener('DOMContentLoaded', () => {
-            fetch('/api/recherchePart/getCriteres/' + Id,
+            fetch('http://localhost:5160/api/recherchePart/getCriteres/' + Id,
                 //fetch('/api/recherchePart/getCriteres?' + new URLSearchParams({Id: 1}), 
                 {
                     method: 'GET',
@@ -132,7 +132,7 @@
             const formData = new FormData(document.getElementById('modificationProfilForm'));
 
 
-            fetch('/api/recherchePart/modifierCriteres/' + Id, {
+            fetch('http://localhost:5160/api/recherchePart/modifierCriteres/' + Id, {
                 method: 'POST',
                 body: formData,
                 headers: {
@@ -142,7 +142,7 @@
                 .then(response => {
                     if (response.ok) {
                         console.log(' mis à jour avec succès.');
-                        window.location.href = '/page/galerieProfils'; // Redirection en cas de succès
+                        window.location.href = 'http://127.0.0.1:5500/FrontEnd/matchs/matchs.html'; // Redirection en cas de succès
                     } else {
                         console.error('Erreur lors de la modification :', response.statusText);
                     }
