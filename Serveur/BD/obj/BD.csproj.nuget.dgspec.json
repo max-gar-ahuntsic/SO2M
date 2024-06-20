@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\xampp\\htdocs\\creation site web transactionnel\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur\\Serveur\\BD\\BD.csproj": {}
+    "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m\\SO2M\\Serveur\\BD\\BD.csproj": {}
   },
   "projects": {
-    "C:\\xampp\\htdocs\\creation site web transactionnel\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur\\Serveur\\BD\\BD.csproj": {
+    "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m\\SO2M\\Serveur\\BD\\BD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\xampp\\htdocs\\creation site web transactionnel\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur\\Serveur\\BD\\BD.csproj",
+        "projectUniqueName": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m\\SO2M\\Serveur\\BD\\BD.csproj",
         "projectName": "BD",
-        "projectPath": "C:\\xampp\\htdocs\\creation site web transactionnel\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur\\Serveur\\BD\\BD.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\xampp\\htdocs\\creation site web transactionnel\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur\\Serveur\\BD\\obj\\",
+        "projectPath": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m\\SO2M\\Serveur\\BD\\BD.csproj",
+        "packagesPath": "C:\\Users\\Maxime\\.nuget\\packages\\",
+        "outputPath": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m\\SO2M\\Serveur\\BD\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Maxime\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

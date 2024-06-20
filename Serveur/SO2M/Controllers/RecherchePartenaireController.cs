@@ -2,17 +2,6 @@
 using Microsoft.EntityFrameworkCore;
 using SO2M.Data;
 using SO2M.Models;
-using System.Net.Http;
-using Microsoft.Extensions.Hosting;
-using System.Net.Http.Headers;
-using System.Text;
-using Microsoft.Extensions.Configuration.UserSecrets;
-using static System.Net.Mime.MediaTypeNames;
-using System.Reflection;
-using System.IO;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc.RazorPages;
 
 
 namespace SO2M.Controllers
@@ -22,37 +11,24 @@ namespace SO2M.Controllers
     [Route("[controller]")]
     public class RecherchePartenaireController : Controller
     {
-        public So2mContext ctx = new So2mContext();
 
-
-
-        [HttpGet("/api/recherchePart/getCriteresPageInit")]
-        public IActionResult pageRechercheLoadInit()
+        
+        private readonly DataContext ctx;
+        public RecherchePartenaireController(DataContext context)
         {
-            return Redirect("~/view/recherche/recherchePartenaire.html");
+            ctx = context;
         }
 
-        [HttpGet("/api/recherchePart/test")]
-        public async Task<ActionResult<List<CritereRecherche>>> getCriteres()
-        {
-            try
-            {
-                var user = await ctx.Utilisateurs.FindAsync(1);
-     
 
-                return Ok(user);
 
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, ex.GetType().Name + "\n" + ex.Message + "\n" + new StringReader(ex.InnerException.ToString()).ReadLine());
-            }
-
-        }
-
+        /// <summary>
+        /// Appelé lorsque la page de Recherche s'ouvre afin de populer les champs
+        /// </summary>
         [HttpGet("/api/recherchePart/getCriteres/{Id}")]
         public async Task<ActionResult<List<CritereRecherche>>> getCriteres(int Id)
         {
+            // mesure temporaire pour tester:  Id = 1
+            Id=1;
             try
             {
                 var user = await ctx.Utilisateurs.FindAsync(Id);
@@ -70,7 +46,10 @@ namespace SO2M.Controllers
         }
 
 
- 
+        /// <summary>
+        /// Cette méthode est appelée lorsqu'une Recherche est lancée afin de stocker les Critères de
+        /// Recherche pour la prochaine Recherche
+        /// </summary>
         [HttpPost("/api/recherchePart/modifierCriteres/{userId}")]
         public async Task<ActionResult<List<Utilisateur>>> modifierCriteres(int userId, [FromForm] CritereRechercheAsAReturnObject newCriteres)
         {
@@ -93,52 +72,43 @@ namespace SO2M.Controllers
                 cr.Ville = newCriteres.Ville;
                 cr.RayonRecherche = newCriteres.RayonRecherche;
 
-
                 await ctx.SaveChangesAsync();
 
-                return Ok();
+                return Ok(user);
             
         }
 
 
 
-
+        /// <summary>
+        /// Retourne la liste des matchs quand une Recherche a été lancée (Le navigateur doit gèrer les 
+        /// items vus et/ou à voir et soumettre le 1er et le dernier item qu'il veut recevoir (pas encore implémenté)
+        /// --- à défaut de quoi la liste de tous les matchs est retournée)
+        /// </summary>
         [HttpGet("/api/recherchePart/getListeProfilsPublics/{userId}")]
-        public async Task<ActionResult<List<Utilisateur>>> getListeProfilsPublics(int userId, [FromForm] Utilisateur listeMatchs)
+        public async Task<ActionResult<List<Utilisateur>>> getListeProfilsPublics(int userId, int firstItem, int lastItem)
         {
-
             // retourne liste de tous les Utilisateurs - temporaire pour tests frontend
             return Ok(await ctx.Utilisateurs.ToListAsync());
 
         }
 
-        [HttpGet("/api/recherchePart/setChosenProfilPublic/{idConnectedUser}")]
-        public async Task<ActionResult<List<Utilisateur>>> setChosenProfilPublic(int idConnectedUser, int idProfilChoisi)
-        {
-            //à faire
-   
-            return Ok();
+ 
 
-        }
-
-
-
+        /// <summary>
+        /// Retourne le profil public de l'Id soumis  (l'id doit être stocké dans le Storage du navigateur
+        /// lorsque l'Utilisateur a choisi un Avatar à la page précédente [page Galerie] ).
+        /// </summary>
         [HttpGet("/api/recherchePart/getProfilPublic/{idConnectedUser}")]
         public async Task<ActionResult<List<Utilisateur>>> getProfilPublic(int idConnectedUser, int idProfilChoisi)
         {
- 
                 var profil = await ctx.Utilisateurs.FindAsync(idProfilChoisi);
                 if (profil is null)
                 {
                     return NotFound("Utilisateur non-existant");
                 }
-            // retourne un Utilisateur --  temporaire pour tester le frontend
             return Ok(profil);
-
         }
-
-
-
 
     }
 }

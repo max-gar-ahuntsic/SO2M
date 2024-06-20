@@ -1,6 +1,8 @@
 using SO2M.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.FileProviders;
+using System.Text.Json.Serialization;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +15,14 @@ builder.Services.AddDbContext<DataContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+
+//---- ajout par MG pour eviter erreur cause par 2 entitees qui se renvoient l'une a l'autre
+builder.Services.AddControllers().AddJsonOptions(options =>
+{
+    options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+    options.JsonSerializerOptions.WriteIndented = true;
+});
+//-----------------
 
 // Configuration des services CORS
 builder.Services.AddCors(options =>
@@ -31,6 +41,12 @@ builder.Services.AddSession(options =>
 });
 
 builder.Services.AddDistributedMemoryCache();
+
+//---- ajout par MG: documentation Swagger-----------------------------
+var xmlDocsPath = Path.Combine(AppContext.BaseDirectory, typeof(Startup).Assembly.GetName().Name + ".xml");
+builder.Services.AddSwaggerGen(options => { options.IncludeXmlComments(xmlDocsPath); });
+//-----------
+
 
 var app = builder.Build();
 

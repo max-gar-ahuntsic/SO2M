@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rS2lfuNAf7t4G133dG5SP0q1/mRViDMz2LT2EdeoeDk=",
+  "Hash": "4wrLIjS5MtpwEe1CbYCUGbp6L5CFJlgWfLH6/iVs3B8=",
   "Source": "SO2M",
   "BasePath": "_content/SO2M",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "SO2M\\wwwroot",
       "Source": "SO2M",
-      "ContentRoot": "C:\\xampp\\htdocs\\creation site web transactionnel\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur\\Serveur\\SO2M\\wwwroot\\",
+      "ContentRoot": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m\\SO2M\\Serveur\\SO2M\\wwwroot\\",
       "BasePath": "_content/SO2M",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\xampp\\htdocs\\creation site web transactionnel\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur\\Serveur\\SO2M\\wwwroot\\uploads\\jouri.jpg",
+      "Identity": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m\\SO2M\\Serveur\\SO2M\\wwwroot\\uploads\\jouri.jpg",
       "SourceId": "SO2M",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\xampp\\htdocs\\creation site web transactionnel\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur sabrine 2024-06-13\\ProjetIntegrateur\\Serveur\\SO2M\\wwwroot\\",
+      "ContentRoot": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m\\SO2M\\Serveur\\SO2M\\wwwroot\\",
       "BasePath": "_content/SO2M",
       "RelativePath": "uploads/jouri.jpg",
       "AssetKind": "All",

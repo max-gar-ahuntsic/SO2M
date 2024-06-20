@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SO2M</name>
+    </assembly>
+    <members>
+        <member name="M:SO2M.Controllers.RecherchePartenaireController.getCriteres(System.Int32)">
+            <summary>
+            Appelé lorsque la page de Recherche s'ouvre afin de populer les champs
+            </summary>
+        </member>
+        <member name="M:SO2M.Controllers.RecherchePartenaireController.modifierCriteres(System.Int32,SO2M.Models.CritereRechercheAsAReturnObject)">
+            <summary>
+            Cette méthode est appelée lorsqu'une Recherche est lancée afin de stocker les Critères de
+            Recherche pour la prochaine Recherche
+            </summary>
+        </member>
+        <member name="M:SO2M.Controllers.RecherchePartenaireController.getListeProfilsPublics(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Retourne la liste des matchs quand une Recherche a été lancée (Le navigateur doit gèrer les 
+            items vus et/ou à voir et soumettre le 1er et le dernier item qu'il veut recevoir (pas encore implémenté)
+            --- à défaut de quoi la liste de tous les matchs est retournée)
+            </summary>
+        </member>
+        <member name="M:SO2M.Controllers.RecherchePartenaireController.getProfilPublic(System.Int32,System.Int32)">
+            <summary>
+            Retourne le profil public de l'Id soumis  (l'id doit être stocké dans le Storage du navigateur
+            lorsque l'Utilisateur a choisi un Avatar à la page précédente [page Galerie] ).
+            </summary>
+        </member>
+    </members>
+</doc>
