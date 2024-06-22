@@ -5,22 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connexion</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="login-container">
         <div class="login-box">
             <h2>Connexion</h2>
-            <form id="loginForm">
+            <form id="connexionForm">
                 <div class="form-group">
                     <label for="username">Nom d'utilisateur</label>
                     <input type="text" class="form-control" id="username" name="username" required>
                 </div>
                 <div class="form-group">
-                    <label for="password">Mot de passe</label>
-                    <input type="password" class="form-control" id="password" name="motDePasse" required>
+                    <label for="motDePasse">Mot de passe</label>
+                    <input type="password" class="form-control" id="motDePasse" name="motDePasse" required>
                 </div>
                 <div class="form-check">
                     <input type="checkbox" class="form-check-input" id="rememberMe">
@@ -32,31 +32,35 @@
 
                 <div class="form-group">
                     <a href="inscription.html">Pas encore enregistré? Ouvrir compte</a>
-                    <button type="button" onclick="submitLogin()" class="btn btn-primary btn-block">Se
+                    <button type="button" onclick="submitLoginForm()" class="btn btn-primary btn-block">Se
                         connecter</button>
-                </div>
+                    <div id="error-message" class="text-danger mt-2"></div>
             </form>
         </div>
     </div>
     <script>
-        function submitLogin() {
-            const formData = new FormData(document.getElementById('loginForm'));
+        function submitLoginForm() {
+            const formData = new FormData(document.getElementById('connexionForm'));
 
-            fetch('http://localhost:5160/api/utilisateur/connexion', {
+            fetch('http://localhost:5160/api/utilisateur/login', {
                 method: 'POST',
                 body: formData
             })
                 .then(response => {
                     if (response.ok) {
-                        window.location.href = '/accueil.html'; // Redirection en cas de succès
+                        window.location.href = '/view/accueil/accueil.html'; // Rediriger vers la page d'accueil après connexion
                     } else {
-                        console.error('Erreur lors de la connexion:', response.statusText);
+                        response.text().then(text => {
+                            document.getElementById('error-message').textContent = 'Erreur lors de la connexion: ' + text;
+                        });
                     }
                 })
                 .catch(error => {
-                    console.error('Erreur lors de la connexion:', error);
+                    document.getElementById('error-message').textContent = 'Erreur lors de la connexion: ' + error.message;
                 });
         }
+
+
     </script>
 </body>
 

@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Critères De Recherche</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -14,22 +17,14 @@
         <div class="navbar">
             <div class="logo">SO2M</div>
             <div class="nav-center">
-                <a href="/FrontEnd/parametre/Modifier Profil.html" class="nav-link"><i class="fas fa-cog"
-                        id="settings-button"></i></a>
-                <a href="/FrontEnd/recherche/recherche.html" class="nav-link"><i class="fas fa-search"
-                        id="search-button"></i></a>
-                <a href="/FrontEnd/photos/photos.html" class="nav-link"><i class="fas fa-camera"
-                        id="photo-button"></i></a>
-                <a href="/FrontEnd/favoris/favoris.html" class="nav-link"><i class="fas fa-star"
-                        id="favorites-button"></i></a>
-                <a href="/FrontEnd/accueil/profil.html" class="nav-link"><i class="fas fa-user-circle"
-                        id="profil-button"></i></a>
-                <a href="/FrontEnd/accueil/accueil.html" class="nav-link"><i class="fas fa-home"
-                        id="home-button"></i></a>
-                <a href="/FrontEnd/messagerie/messagerie.html" class="nav-link"><i class="fas fa-envelope"
-                        id="message-button"></i></a>
-                <a href="/FrontEnd/login/login.html" class="nav-link"><i class="fas fa-sign-out-alt"
-                        id="logout-button"></i></a>
+                <a href="/view/parametre/Modifier Profil.html" class="nav-link"><i class="fas fa-cog" id="settings-button"></i></a>
+                <a href="/view/recherche/recherchePartenaire.html" class="nav-link"><i class="fas fa-search" id="search-button"></i></a>
+                <a href="/view/photos/photos.html" class="nav-link"><i class="fas fa-camera" id="photo-button"></i></a>
+                <a href="/view/favoris/favoris.html" class="nav-link"><i class="fas fa-star" id="favorites-button"></i></a>
+                <a href="/view/matchs/matchs.html" class="nav-link"><i class="fas fa-user-circle" id="profil-button"></i></a>
+                <a href="/view/accueil/accueil.html" class="nav-link"><i class="fas fa-home" id="home-button"></i></a>
+                <a href="/view/messagerie/messagerie.html" class="nav-link"><i class="fas fa-envelope" id="message-button"></i></a>
+                <a href="/view/wwwroot/login.html" class="nav-link"><i class="fas fa-sign-out-alt" id="logout-button"></i></a>
             </div>
             <div class="user-info">
                 <img id="profile-photo" src="" alt="Photo de Profil">
@@ -95,6 +90,39 @@
     </div>
 
     <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Vérifier si l'utilisateur est connecté
+            fetch('http://localhost:5160/api/utilisateur/current', {
+                credentials: 'same-origin' // Assurez-vous que les cookies de session sont envoyés
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        console.log('Redirection vers la page de connexion : ', response.statusText);
+                        window.location.href = '/view/wwwroot/login.html';
+                        return;
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (data) {
+                        console.log('Données de l\'utilisateur : ', data);
+                        document.getElementById('username').textContent = data.Username;
+                        document.getElementById('profile-photo').src = data.ProfilePhotoURL;
+                    }
+                })
+                .catch(error => {
+                    console.error('Erreur lors de la récupération de l\'utilisateur :', error);
+                    window.location.href = '/view/wwwroot/login.html';
+                });
+            // Gestion de la déconnexion
+            document.getElementById('logout-button').addEventListener('click', () => {
+                fetch('/api/utilisateur/logout', { method: 'POST' })
+                    .then(() => {
+                        window.location.href = '/view/wwwroot/login.html'; // Corrigez l'URL de redirection ici
+                    })
+                    .catch(error => console.error('Error:', error));
+            });
+        });
         /*
             fetch('https://example.com?' + new URLSearchParams({
                 foo: 'value',
