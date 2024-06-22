@@ -87,4 +87,14 @@ app.UseSession(); // Utilisez le middleware de session avant l'authentification
 app.UseAuthorization();
 app.MapControllers();
 
+
+//--------------------------
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = new PhysicalFileProvider(
+        Path.Combine(Directory.GetCurrentDirectory(), "View")),
+    RequestPath = "/View"
+});
+//-----------------------------
+
 app.Run();

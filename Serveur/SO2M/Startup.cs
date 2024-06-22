@@ -58,7 +58,7 @@ public class Startup
         }
         else
         {
-            app.UseExceptionHandler("/Home/Error");
+            app.UseExceptionHandler("/Error");
             app.UseHsts();
         }
 
@@ -67,11 +67,19 @@ public class Startup
 
         app.UseRouting();
 
-        app.UseCors("AllowAll");
-
+        app.UseCors("AllowAllOrigins");
         app.UseSession();
+// pour ne pas arriver se connecter lorsque je me connecte et je fait un retour avec la bouton en arriére 
+        app.Use(async (context, next) =>
+        {
+            context.Response.Headers["Cache-Control"] = "no-cache, no-store, must-revalidate";
+            context.Response.Headers["Pragma"] = "no-cache";
+            context.Response.Headers["Expires"] = "0";
+            await next();
+        });
 
-        app.UseAuthorization();
+        app.UseAuthentication();
+        app.UseAuthorization(); ;
 
         app.UseSwagger();
         app.UseSwaggerUI(c =>

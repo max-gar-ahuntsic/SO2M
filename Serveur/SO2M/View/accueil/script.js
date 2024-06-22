@@ -34,12 +34,30 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Gestion de la déconnexion
+    //document.getElementById('logout-button').addEventListener('click', () => {
+        //fetch('/api/utilisateur/logout', { method: 'POST' })
+            //.then(() => {
+              //  window.location.href = '/view/wwwroot/login.html'; // Corrigez l'URL de redirection ici
+           // })
+            //.catch(error => console.error('Error:', error));
+   // });
+
+    // Gestion de la déconnexion
     document.getElementById('logout-button').addEventListener('click', () => {
-        fetch('/api/utilisateur/logout', { method: 'POST' })
-            .then(() => {
-                window.location.href = 'login.html';
+        fetch('/api/utilisateur/logout', {
+            method: 'POST',
+            credentials: 'same-origin'
+        })
+            .then(response => {
+                console.log('Réponse reçue pour la déconnexion:', response);
+                if (!response.ok) {
+                    throw new Error(`Network response was not ok: ${response.statusText}`);
+                }
+                window.location.href = '/view/wwwroot/login.html'; // Redirigez vers la page de connexion après la déconnexion
             })
-            .catch(error => console.error('Error:', error));
+            .catch(error => {
+                console.error('Erreur lors de la déconnexion:', error);
+            });
     });
 
     // Boutons du menu en haut
