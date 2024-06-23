@@ -172,16 +172,14 @@ namespace SO2M.Controllers
                 {
                     Console.WriteLine($"     bon genre ! {ut.Genre}, inclus ! ");
 
-                    //--------  critères "plutôt" exclusifs (les profils qui ne répondent
-                    //... pas à ces critères seront présentés à la fin des résultats -- eg: Age :
-                    //... --> si une Utilisatrice cherche un Homme entre 30 et 40, les hommes
-                    //... de 20 ans ou de 50 ans lui seront présentés à la toute fin)
-
                     //------ critere Orientation S
                     if (ut.OrientationS == cr.OrientationS)
                     {
                         ut.MatchScore_Total += 80;
                         Console.WriteLine($"     bonne orientation sexuelle! {cr.OrientationS}, 80 points!");
+                    }
+                    else {
+                        ut.MatchScore_Total += 10;
                     }
 
                     //------ critère Age
@@ -189,23 +187,62 @@ namespace SO2M.Controllers
                         ut.MatchScore_Total += 50;
                         Console.WriteLine($"     âge satisfait les critères! {ut.Age}, 50 points!");
                     }
+                    else
+                    {
+                        ut.MatchScore_Total += 10;
+                    }
                     //------ critère Age
                     if (ut.NiveauAcademique == cr.NiveauAcademique)
                     {
                         ut.MatchScore_Total += 30;
                         Console.WriteLine($"     match au niveau scolaire! {cr.NiveauAcademique}, 30 points!");
                     }
+                    else
+                    {
+                        ut.MatchScore_Total += 10;
+                    }
                     //------ calcul du Score au modèle psycho
-
-
+                    ut.MatchScore_ModelePsy1 = 0 ;
+ 
+                    if ((ut.Modele1Axe1 != null)
+                         && (ut.Modele1Axe1 != 0)
+                          && (currentUser.Modele1Axe1 != null)
+                           && (currentUser.Modele1Axe1 != 0))
+                            {
+                                float diff = (float)Math.Abs((decimal)(ut.Modele1Axe1) - (decimal)(currentUser.Modele1Axe1));
+                                float from_diff_to_similaries = 33 * ((9 - diff) / 9);
+                                ut.MatchScore_ModelePsy1 += (int)from_diff_to_similaries;
+                                ut.MatchScore_Total += (int)from_diff_to_similaries;
+                                Console.WriteLine($"     Axe gestion de conflit: {(int)from_diff_to_similaries} sur 33 points !!");
+                            }
+                    if ((ut.Modele1Axe2 != null)
+                         && (ut.Modele1Axe2 != 0)
+                          && (currentUser.Modele1Axe2 != null)
+                           && (currentUser.Modele1Axe2 != 0))
+                            {
+                                float diff = (float)Math.Abs((decimal)(ut.Modele1Axe2) - (decimal)(currentUser.Modele1Axe2));
+                                float from_diff_to_similaries = 33 * ((9 - diff) / 9);
+                                ut.MatchScore_ModelePsy1 += (int)from_diff_to_similaries;
+                                ut.MatchScore_Total += (int)from_diff_to_similaries;
+                                Console.WriteLine($"     Axe dépendant vs indépendant: {(int)from_diff_to_similaries} sur 33 points !!");
+                            }
+                    if ((ut.Modele1Axe3 != null) 
+                        && (ut.Modele1Axe3 != 0)
+                         && (currentUser.Modele1Axe3 != null)
+                          && (currentUser.Modele1Axe3 != 0))
+                            {
+                                float diff = (float)Math.Abs((decimal)(ut.Modele1Axe3) - (decimal)(currentUser.Modele1Axe3));
+                                float from_diff_to_similaries = 33 * ((9 - diff) / 9);
+                                ut.MatchScore_ModelePsy1 += (int)from_diff_to_similaries;
+                                ut.MatchScore_Total += (int)from_diff_to_similaries;
+                                Console.WriteLine($"     Axe relations intimes: {(int)from_diff_to_similaries} sur 33 points !!");
+                            }
+  
                 }
 
                 Console.WriteLine($"     score total: {ut.MatchScore_Total} points !!!");
 
                 Console.WriteLine("-----------------------------");
-
-
-                  
 
             }
             Console.WriteLine($"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
@@ -216,9 +253,6 @@ namespace SO2M.Controllers
             result = result.OrderByDescending(p => p.MatchScore_Total).Where(p => p.MatchScore_Total != 0).ToList();
 
             return Ok(result);
-
- 
-        
        
 
         }

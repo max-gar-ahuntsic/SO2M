@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SO2M")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a416be8c435aab69604e07758223dab8adcd4930")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d380e596116392414b7affd47dd82859d85782f2")]
 [assembly: System.Reflection.AssemblyProductAttribute("SO2M")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SO2M")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
