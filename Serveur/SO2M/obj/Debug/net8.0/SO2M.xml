@@ -14,7 +14,7 @@
             Retourne les Scores au backend pour stockage dans la bd
             </summary>
         </member>
-        <member name="M:SO2M.Controllers.RecherchePartenaireController.getCriteres(System.Int32)">
+        <member name="M:SO2M.Controllers.RecherchePartenaireController.getCriteres">
             <summary>
             Appelé lorsque la page de Recherche s'ouvre afin de populer les champs
             </summary>
@@ -25,14 +25,13 @@
             Recherche pour la prochaine Recherche
             </summary>
         </member>
-        <member name="M:SO2M.Controllers.RecherchePartenaireController.getListeProfilsPublics(System.Int32,System.Int32,System.Int32)">
+        <member name="M:SO2M.Controllers.RecherchePartenaireController.getListeProfilsPublics">
             <summary>
-            Retourne la liste des matchs quand une Recherche a été lancée (Le navigateur doit gèrer les 
-            items vus et/ou à voir et soumettre le 1er et le dernier item qu'il veut recevoir (pas encore implémenté)
-            --- à défaut de quoi la liste de tous les matchs est retournée)
+            Appelé par la page Match à son ouverture; Retourne une Liste d'Utilisateurs -- du meilleur au moins bon match. 
+            L'attribut 'MatchScore_ModelePsy1' informe sur le niveau de match suivant le modèle psycho
             </summary>
         </member>
-        <member name="M:SO2M.Controllers.RecherchePartenaireController.getProfilPublic(System.Int32,System.Int32)">
+        <member name="M:SO2M.Controllers.RecherchePartenaireController.getProfilPublic(System.Int32)">
             <summary>
             Retourne le profil public de l'Id soumis  (l'id doit être stocké dans le Storage du navigateur
             lorsque l'Utilisateur a choisi un Avatar à la page précédente [page Galerie] ).

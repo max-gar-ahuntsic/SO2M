@@ -39,7 +39,7 @@ namespace SO2M.Controllers
             }
             catch (Exception ex)
             {
-                string errMsg = "Utilisateur non-connecté ou non-existant. Erreur 'attrapée' et anticipée. Détails erreur: " + ex.GetType().Name + "\n" + ex.Message;
+                string errMsg = "Utilisateur non-connecté ou non-existant. Erreur 'attrapée'. Détails erreur: " + ex.GetType().Name + "\n" + ex.Message;
                 Console.WriteLine(errMsg);
                 return NotFound(errMsg);
              }
@@ -65,7 +65,7 @@ namespace SO2M.Controllers
             }
             catch (Exception ex)
             {
-                string errMsg = "Utilisateur non-connecté ou non-existant. Erreur 'attrapée' et anticipée. Détails erreur: " + ex.GetType().Name + "\n" + ex.Message;
+                string errMsg = "Utilisateur non-connecté ou non-existant. Erreur 'attrapée. Détails erreur: " + ex.GetType().Name + "\n" + ex.Message;
                 Console.WriteLine(errMsg);
                 return NotFound(errMsg);
             }
