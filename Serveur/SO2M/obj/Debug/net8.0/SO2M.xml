@@ -4,6 +4,16 @@
         <name>SO2M</name>
     </assembly>
     <members>
+        <member name="M:SO2M.Controllers.QuestionnaireController.getScoresModele1">
+            <summary>
+            Retourne l'utilisateur en cours -- donc également les Scores au Modèle psycho
+            </summary>
+        </member>
+        <member name="M:SO2M.Controllers.QuestionnaireController.setScoresModele1(SO2M.Models.Utilisateur)">
+            <summary>
+            Retourne les Scores au backend pour stockage dans la bd
+            </summary>
+        </member>
         <member name="M:SO2M.Controllers.RecherchePartenaireController.getCriteres(System.Int32)">
             <summary>
             Appelé lorsque la page de Recherche s'ouvre afin de populer les champs
