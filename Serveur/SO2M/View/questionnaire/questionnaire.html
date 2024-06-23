@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil (suite)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">SO2M</div>
+            <div class="nav-center">
+                <a href="/view/parametre/Modifier Profil.html" class="nav-link"><i class="fas fa-cog" id="settings-button"></i></a>
+                <a href="/view/questionnaire/questionnaire.html" class="nav-link"><i class="fa fa-plus" id="questionnaire-button"></i></a>
+                <a href="/view/recherche/recherchePartenaire.html" class="nav-link"><i class="fas fa-search" id="search-button"></i></a>
+                <a href="/view/photos/photos.html" class="nav-link"><i class="fas fa-camera" id="photo-button"></i></a>
+                <a href="/view/favoris/favoris.html" class="nav-link"><i class="fas fa-star" id="favorites-button"></i></a>
+                <a href="/view/matchs/matchs.html" class="nav-link"><i class="fas fa-user-circle" id="profil-button"></i></a>
+                <a href="/view/accueil/accueil.html" class="nav-link"><i class="fas fa-home" id="home-button"></i></a>
+                <a href="/view/messagerie/messagerie.html" class="nav-link"><i class="fas fa-envelope" id="message-button"></i></a>
+                <a href="/view/wwwroot/login.html" class="nav-link"><i class="fas fa-sign-out-alt" id="logout-button"></i></a>
+            </div>
+            <div class="user-info">
+                <img id="profile-photo" src="" alt="Photo de Profil">
+                <span id="username"></span>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="form-container">
+            <h2>Profil (suite!)</h2>
+            <div>
+                <i><p>
+                Vous désirez recevoir des suggestions de profils en fonction de nos algorithmes inspirés d'études en Psychologie?  Vous n'avez qu'à répondre à ces 3 questions !
+         
+                </p></I>
+
+
+              </div>
+
+ 
+            <form id="questionnaireForm" enctype="multipart/form-data">
+
+
+                <div class="form-group">
+
+                    <label for="modele1Axe1">Quelle est votre approche lorsqu'il y a conflit ou un désaccord avec votre partenaire?</label>
+                    <select class="form-control" id="modele1Axe1" name="modele1Axe1" required="">
+                        <option value=0>(préfère ne pas répondre / ne cherche pas de rel. à long terme) </option>
+                        <option value=1>altruisme, don de soi </option>
+                        <option value=5>négociation, compromis </option>
+                        <option value=10>confrontation, compétition, que le meilleur gagne </option>
+
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="modele1Axe2">Êtes vous plutôt dépendant ou indépendant en couple? </label>
+                    <select class="form-control" id="modele1Axe2" name="modele1Axe2" required="">
+                        <option value="0">(préfère ne pas répondre / ne cherche pas de rel. à long terme) </option>
+                        <option value="1">Dépendant / Fusionnel</option>
+                        <option value="5">Équilibre partagé entre partenaire, amis, famille, travail...</option>
+                        <option value="10">Indépendant</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="modele1Axe3">Quelle importance accordez-vous aux relations intimes?</label>
+                    <select class="form-control" id="modele1Axe3" name="modele1Axe3" required="">
+                        <option value="0">(préfère ne pas répondre / ne cherche pas de rel. à long terme) </option>
+                        <option value="1">Elles ne sont pas importantes</option>
+                        <option value="5">Elles sont importantes mais pas essentielles</option>
+                        <option value="10">Elles sont une des raisons d'être du couple</option>
+                    </select>
+                </div>
+                <button type="button" onclick="submitForm()" class="btn btn-primary btn-block">Soumettre</button>
+                <button type="button" onclick="window.location.href = 'http://localhost:5160/view/accueil/accueil.html';" class="btn btn-primary btn-block">Plus Tard</button>
+                <div id="error-message" class="text-danger mt-2"></div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+            fetch('http://localhost:5160/api/questionnaire/getScoresModele1', 
+                {
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${localStorage.getItem('token')}`
+                    }
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.modele1Axe1===null) data.modele1Axe1="0";
+                    if (data.modele1Axe2===null) data.modele1Axe2="0";
+                    if (data.modele1Axe3===null) data.modele1Axe3="0";
+                    document.getElementById('modele1Axe1').value = data.modele1Axe1;
+                    document.getElementById('modele1Axe2').value = data.modele1Axe2;
+                    document.getElementById('modele1Axe3').value = data.modele1Axe3;
+                 })
+                .catch(error => {
+                    console.error('Erreur lors de la récupération des données du profil:', error);
+                    window.location.href = 'http://localhost:5160/view/wwwroot/login.html'; // Redirection en cas de succès
+                });
+        });
+
+        function submitForm() {
+            let Id = 1 // ** A AJUSTER APRÈS QUE L'AUTHENTIFICATION SERAIT IMPLÉMENTÉE **  
+
+            const formData = new FormData(document.getElementById('questionnaireForm'));
+
+
+            fetch('http://localhost:5160/api/questionnaire/setScoresModele1', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Authorization': `Bearer ${localStorage.getItem('token')}`
+                }
+            })
+                .then(response => {
+                    if (response.ok) {
+                        console.log(' mis à jour avec succès.');
+                        window.location.href = 'http://localhost:5160/view/accueil/accueil.html'; // Redirection en cas de succès
+                    } else {
+                        console.error('Erreur lors de la modification :', response.statusText);
+                    }
+                })
+                .catch(error => {
+                    console.error('Erreur lors de la modification:', error);
+                });
+        }
+    </script>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-column">
+                <h3>Group 07915</h3>
+                <p>9155, rue St-Hubert, Montréal, QC H2M 1Y8</p>
+                <p>(514) 389-5921</p>
+            </div>
+            <div class="footer-column">
+                <h3>En savoir plus</h3>
+                <ul>
+                    <li><a href="#">A propos</a></li>
+                    <li><a href="#">Contactez nous</a></li>
+                    <li><a href="#">Advertise</a></li>
+                    <li><a href="#">Terms de services</a></li>
+                    <li><a href="#">Politique de privacité</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Notre bulletin d'information</h3>
+                <p>Abonnez-vous à notre newsletter pour recevoir nos actualités et nos remises directement dans votre
+                    boîte
+                    de réception.</p>
+                <form action="#" method="post">
+                    <input type="email" placeholder="Email Address">
+                    <button type="submit">S'abonner</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 SO2M. Tous droits réservés.</p>
+            <p>Projet Integrateur développé par Group: SO2M</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- <script src="script.js"></script> -->
+    <!-- <script src="user-info.js"></script> -->
+</body>
+
+</html>

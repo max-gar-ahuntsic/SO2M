@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SO2M.Models
 {
@@ -18,8 +19,13 @@ namespace SO2M.Models
         public DateOnly? DateCreationProfil { get; set; }
         public int? CritereRechercheId { get; set; }
         public int? ModelPsycologiqueId { get; set; }
+        
+        //----------- added 24-06-22-------------
+        public int? Modele1Axe1 { get; set; }
+        public int? Modele1Axe2 { get; set; }
+        public int? Modele1Axe3 { get; set; }
 
-
+     
         public virtual CritereRecherche? CritereRecherche { get; set; }
         public virtual ModelPsycologique? ModelPsycologique { get; set; }
         public virtual ICollection<Photo> Photos { get; set; } = new List<Photo>();
