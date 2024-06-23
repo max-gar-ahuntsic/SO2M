@@ -25,7 +25,14 @@ namespace SO2M.Models
         public int? Modele1Axe2 { get; set; }
         public int? Modele1Axe3 { get; set; }
 
-     
+        //-------- ci-bas attributs non intégrés dans les tables; 
+        // ... utiliser par Recherche pour ordonner les matchs et informer FE des 'Scores'
+        [NotMapped]
+        public int? MatchScore_ModelePsy1 { get; set; } //pas stocké dans la bd
+        [NotMapped]
+        public int? MatchScore_Total { get; set; } //pas stocké dans la bd
+
+
         public virtual CritereRecherche? CritereRecherche { get; set; }
         public virtual ModelPsycologique? ModelPsycologique { get; set; }
         public virtual ICollection<Photo> Photos { get; set; } = new List<Photo>();
