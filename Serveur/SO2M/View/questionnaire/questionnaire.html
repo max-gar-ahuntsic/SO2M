@@ -103,6 +103,11 @@
                     document.getElementById('modele1Axe1').value = data.modele1Axe1;
                     document.getElementById('modele1Axe2').value = data.modele1Axe2;
                     document.getElementById('modele1Axe3').value = data.modele1Axe3;
+
+                    //----insertion photo 
+                    let photoSourceDate = 'data:image/png;base64,' + data.photo1_data + '';
+                    document.getElementById('profile-photo').setAttribute("src", photoSourceDate);
+
                  })
                 .catch(error => {
                     console.error('Erreur lors de la récupération des données du profil:', error);
@@ -111,10 +116,8 @@
         });
 
         function submitForm() {
-            let Id = 1 // ** A AJUSTER APRÈS QUE L'AUTHENTIFICATION SERAIT IMPLÉMENTÉE **  
 
             const formData = new FormData(document.getElementById('questionnaireForm'));
-
 
             fetch('http://localhost:5160/api/questionnaire/setScoresModele1', {
                 method: 'POST',
