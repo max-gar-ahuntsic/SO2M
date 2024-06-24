@@ -32,6 +32,11 @@ namespace SO2M.Models
         [NotMapped]
         public int? MatchScore_Total { get; set; } //pas stocké dans la bd
 
+        //-------- bon; pour photo
+        [NotMapped]
+        public IFormFile? ProfilePhoto { get; set; }
+        public string? Photo1_data { get; set; }
+
 
         public virtual CritereRecherche? CritereRecherche { get; set; }
         public virtual ModelPsycologique? ModelPsycologique { get; set; }

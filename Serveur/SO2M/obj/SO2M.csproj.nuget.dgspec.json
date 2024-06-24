@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-test3\\SO2M\\Serveur\\SO2M\\SO2M.csproj": {}
+    "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-test5\\SO2M\\Serveur\\SO2M\\SO2M.csproj": {}
   },
   "projects": {
-    "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-test3\\SO2M\\Serveur\\BD\\BD.csproj": {
+    "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-test5\\SO2M\\Serveur\\BD\\BD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-test3\\SO2M\\Serveur\\BD\\BD.csproj",
+        "projectUniqueName": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-test5\\SO2M\\Serveur\\BD\\BD.csproj",
         "projectName": "BD",
-        "projectPath": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-test3\\SO2M\\Serveur\\BD\\BD.csproj",
+        "projectPath": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-test5\\SO2M\\Serveur\\BD\\BD.csproj",
         "packagesPath": "C:\\Users\\Maxime\\.nuget\\packages\\",
-        "outputPath": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-test3\\SO2M\\Serveur\\BD\\obj\\",
+        "outputPath": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-test5\\SO2M\\Serveur\\BD\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -68,14 +68,14 @@
         }
       }
     },
-    "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-test3\\SO2M\\Serveur\\SO2M\\SO2M.csproj": {
+    "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-test5\\SO2M\\Serveur\\SO2M\\SO2M.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-test3\\SO2M\\Serveur\\SO2M\\SO2M.csproj",
+        "projectUniqueName": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-test5\\SO2M\\Serveur\\SO2M\\SO2M.csproj",
         "projectName": "SO2M",
-        "projectPath": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-test3\\SO2M\\Serveur\\SO2M\\SO2M.csproj",
+        "projectPath": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-test5\\SO2M\\Serveur\\SO2M\\SO2M.csproj",
         "packagesPath": "C:\\Users\\Maxime\\.nuget\\packages\\",
-        "outputPath": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-test3\\SO2M\\Serveur\\SO2M\\obj\\",
+        "outputPath": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-test5\\SO2M\\Serveur\\SO2M\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -96,8 +96,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-test3\\SO2M\\Serveur\\BD\\BD.csproj": {
-                "projectPath": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-test3\\SO2M\\Serveur\\BD\\BD.csproj"
+              "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-test5\\SO2M\\Serveur\\BD\\BD.csproj": {
+                "projectPath": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-test5\\SO2M\\Serveur\\BD\\BD.csproj"
               }
             }
           }
