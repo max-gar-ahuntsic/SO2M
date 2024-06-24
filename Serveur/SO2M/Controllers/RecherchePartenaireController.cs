@@ -119,7 +119,7 @@ namespace SO2M.Controllers
         /// Appelé par la page Match à son ouverture; Retourne une Liste d'Utilisateurs -- du meilleur au moins bon match. 
         /// L'attribut 'MatchScore_ModelePsy1' informe sur le niveau de match suivant le modèle psycho
         /// </summary>
-        [HttpGet("/api/recherchePart/getListeProfilsPublics")]
+        [HttpPost("/api/recherchePart/getListeProfilsPublics")]
          public async Task<ActionResult<List<Utilisateur>>> getListeProfilsPublics()
         {
 
@@ -142,6 +142,12 @@ namespace SO2M.Controllers
 
             int? critRechId = user.CritereRechercheId;
             cr = await ctx.CritereRecherches.FindAsync(critRechId);
+            if (cr == null)
+            {
+                return BadRequest("L'utilisateur doit définir ses critères de recherche.");
+            }
+
+
             var listeUtilisateurs = ctx.Utilisateurs
                      .ToList();
 
