@@ -91,37 +91,9 @@
                 <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
-        <script>
-        /*  document.addEventListener('DOMContentLoaded', () => {
-                // Vérifier si l'utilisateur est connecté
-                fetch('http://localhost:5160/api/utilisateur/current', {
-                    credentials: 'same-origin' // Assurez-vous que les cookies de session sont envoyés
-                })
-                    .then(response => {
-                        if (!response.ok) {
-                            console.log('Redirection vers la page de connexion : ', response.statusText);
-                            window.location.href = '/FrontEnd/wwwroot/login.html';
-                            return;
-                        }
-                        return response.json();
-                    })
-                    .then(data => {
-                        if (data) {
-                            console.log('Données de l\'utilisateur : ', data);
-                            document.getElementById('username').textContent = data.Username;
-                            document.getElementById('profile-photo').src = data.ProfilePhotoURL;
-                        }
-                    })
-                    .catch(error => {
-                        console.error('Erreur lors de la récupération de l\'utilisateur :', error);
-                        window.location.href = '/FrontEnd/wwwroot/login.html';
-                    });
-            });  */
-
-        </script>
+       
     </footer>
     <script src="script.js"></script>
-    <!--     <script src="user-info.js"></script>-->
 </body>
 
 </html>

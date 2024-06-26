@@ -1,46 +1,90 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Récupérer les informations de l'utilisateur connecté
-    fetch('/api/utilisateur/current')
-        .then(response => response.json())
+    fetch('/api/utilisateur/current', {
+        credentials: 'same-origin'
+    })
+        .then(response => {
+            if (!response.ok) {
+                window.location.href = '/view/wwwroot/login.html';
+                return;
+            }
+            return response.json();
+        })
         .then(data => {
             document.getElementById('username').textContent = data.Username;
             document.getElementById('profile-photo').src = data.ProfilePhotoURL;
+            loadPosts();
         })
-        .catch(error => console.error('Error:', error));
+        .catch(error => {
+            window.location.href = '/view/wwwroot/login.html';
+        });
+    // Charger les posts
+    function loadPosts() {
+        fetch('/api/post/posts', {
+            credentials: 'same-origin'
+        })
+            .then(response => response.json())
+            .then(posts => {
+                const postsContainer = document.getElementById('posts');
+                postsContainer.innerHTML = '';
+                posts.forEach(post => {
+                    const postElement = document.createElement('div');
+                    postElement.className = 'post';
+                    postElement.innerHTML = `
+                        <strong>${post.username}</strong>
+                        <p>${post.content}</p>
+                        <button class="btn-supp" onclick="deletePost(${post.id})">Supprimer</button>
+                    `;
+                    postsContainer.appendChild(postElement);
+                });
+            })
+            .catch(error => console.error('Erreur lors du chargement des posts:', error));
+    }
 
-    // Simuler des posts (en attendant l'intégration avec le backend)
-    const posts = [
-        { username: 'Utilisateur1', content: 'Bonjour à tous !' },
-        { username: 'Utilisateur2', content: 'Quelqu\'un veut discuter ?' }
-    ];
-
-    const postsContainer = document.getElementById('posts');
-    posts.forEach(post => {
-        const postElement = document.createElement('div');
-        postElement.className = 'post';
-        postElement.innerHTML = `<strong>${post.username}</strong><p>${post.content}</p>`;
-        postsContainer.appendChild(postElement);
-    });
-
+    // Publier un nouveau statut
     document.getElementById('post-button').addEventListener('click', () => {
         const content = document.getElementById('post-content').value;
         if (content) {
-            const postElement = document.createElement('div');
-            postElement.className = 'post';
-            postElement.innerHTML = `<strong>Vous</strong><p>${content}</p>`;
-            postsContainer.insertBefore(postElement, postsContainer.firstChild);
-            document.getElementById('post-content').value = '';
+            fetch('/api/post/post', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: `content=${encodeURIComponent(content)}`,
+                credentials: 'same-origin'
+            })
+                .then(response => response.json())
+                .then(post => {
+                    const postsContainer = document.getElementById('posts');
+                    const postElement = document.createElement('div');
+                    postElement.className = 'post';
+                    postElement.innerHTML = `
+                        <strong>${post.username}</strong>
+                        <p>${post.content}</p>
+                        <button class="btn-supp" onclick="deletePost(${post.id})">Supprimer</button>
+                    `;
+                    postsContainer.insertBefore(postElement, postsContainer.firstChild);
+                    document.getElementById('post-content').value = '';
+                })
+                .catch(error => console.error('Erreur lors de la publication du post:', error));
         }
     });
 
-    // Gestion de la déconnexion
-    //document.getElementById('logout-button').addEventListener('click', () => {
-        //fetch('/api/utilisateur/logout', { method: 'POST' })
-            //.then(() => {
-              //  window.location.href = '/view/wwwroot/login.html'; // Corrigez l'URL de redirection ici
-           // })
-            //.catch(error => console.error('Error:', error));
-   // });
+    // Supprimer un post
+    window.deletePost = function (postId) {
+        fetch(`/api/post/post/${postId}`, {
+            method: 'DELETE',
+            credentials: 'same-origin'
+        })
+            .then(response => {
+                if (response.ok) {
+                    loadPosts();
+                } else {
+                    console.error('Erreur lors de la suppression du post:', response.statusText);
+                }
+            })
+            .catch(error => console.error('Erreur lors de la suppression du post:', error));
+    }
 
     // Gestion de la déconnexion
     document.getElementById('logout-button').addEventListener('click', () => {

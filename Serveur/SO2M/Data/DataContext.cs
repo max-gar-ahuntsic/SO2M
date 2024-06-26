@@ -13,6 +13,8 @@ namespace SO2M.Data
         public DbSet<Photo> Photos { get; set; }
         public DbSet<Utilisateur> Utilisateurs { get; set; }
         public DbSet<Message> Messages { get; set; } // Ajout de la DbSet pour les messages
+        public DbSet<Post> Posts { get; set; }
+
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -36,6 +38,11 @@ namespace SO2M.Data
                 .OnDelete(DeleteBehavior.Restrict);
 
             base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Utilisateur>()
+                .HasMany(u => u.Posts)
+                .WithOne(p => p.Utilisateur)
+                .HasForeignKey(p => p.UserId);
         }
     }
 }

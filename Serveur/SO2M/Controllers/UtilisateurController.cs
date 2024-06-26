@@ -171,58 +171,59 @@ public IActionResult Login([FromForm] string username, [FromForm] string motDePa
         }
 
         // Ajout d'autres méthodes CRUD pour les utilisateurs
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetUtilisateur(int id)
-        {
-            var utilisateur = await _context.Utilisateurs.FindAsync(id);
-            if (utilisateur == null)
-            {
-                return NotFound();
-            }
-            return Ok(utilisateur);
+        //[HttpGet("{id}")]
+       /// public async Task<IActionResult> GetUtilisateur(int id)
+       // {
+        ////    var utilisateur = await _context.Utilisateurs.FindAsync(id);
+         //   if (utilisateur == null)
+         //   {
+          //      return NotFound();
+          //  }
+       //   //  return Ok(utilisateur);
         }
+    //
+       // [HttpPut("{id}")]
+       // public async Task<IActionResult> UpdateUtilisateur(int id, [FromForm] Utilisateur updatedUtilisateur)
+       // {
+          //  var utilisateur = await _context.Utilisateurs.FindAsync(id);
+           // if (utilisateur == null)
+           // {
+            //    return NotFound();
+            //}
 
-        [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateUtilisateur(int id, [FromForm] Utilisateur updatedUtilisateur)
-        {
-            var utilisateur = await _context.Utilisateurs.FindAsync(id);
-            if (utilisateur == null)
-            {
-                return NotFound();
-            }
+          //  utilisateur.Nom = updatedUtilisateur.Nom;
+          //  utilisateur.Prenom = updatedUtilisateur.Prenom;
+          //  utilisateur.Genre = updatedUtilisateur.Genre;
+           // utilisateur.NiveauAcademique = updatedUtilisateur.NiveauAcademique;
+           // utilisateur.Age = updatedUtilisateur.Age;
+           /// utilisateur.OrientationS = updatedUtilisateur.OrientationS;
+           // utilisateur.Courriel = updatedUtilisateur.Courriel;
+           // utilisateur.Username = updatedUtilisateur.Username;
+          //  utilisateur.MotDePasse = HashPassword(updatedUtilisateur.MotDePasse);
+          //  utilisateur.Est_Active = updatedUtilisateur.Est_Active;
+          //  utilisateur.CritereRechercheId = updatedUtilisateur.CritereRechercheId;
+          //  utilisateur.ModelPsycologiqueId = updatedUtilisateur.ModelPsycologiqueId;
+          //  utilisateur.Photo1_data = updatedUtilisateur.Photo1_data;
 
-            utilisateur.Nom = updatedUtilisateur.Nom;
-            utilisateur.Prenom = updatedUtilisateur.Prenom;
-            utilisateur.Genre = updatedUtilisateur.Genre;
-            utilisateur.NiveauAcademique = updatedUtilisateur.NiveauAcademique;
-            utilisateur.Age = updatedUtilisateur.Age;
-            utilisateur.OrientationS = updatedUtilisateur.OrientationS;
-            utilisateur.Courriel = updatedUtilisateur.Courriel;
-            utilisateur.Username = updatedUtilisateur.Username;
-            utilisateur.MotDePasse = HashPassword(updatedUtilisateur.MotDePasse);
-            utilisateur.Est_Active = updatedUtilisateur.Est_Active;
-            utilisateur.CritereRechercheId = updatedUtilisateur.CritereRechercheId;
-            utilisateur.ModelPsycologiqueId = updatedUtilisateur.ModelPsycologiqueId;
+        //    await _context.SaveChangesAsync();
 
-            await _context.SaveChangesAsync();
+        //    return NoContent();
+       // }
 
-            return NoContent();
-        }
+       // [HttpDelete("{id}")]
+       // public async Task<IActionResult> DeleteUtilisateur(int id)
+       // {
+       //     var utilisateur = await _context.Utilisateurs.FindAsync(id);
+         //   if (utilisateur == null)
+         //   {
+         //       return NotFound();
+        //    }
 
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteUtilisateur(int id)
-        {
-            var utilisateur = await _context.Utilisateurs.FindAsync(id);
-            if (utilisateur == null)
-            {
-                return NotFound();
-            }
+          //  _context.Utilisateurs.Remove(utilisateur);
+          //  await _context.SaveChangesAsync();
 
-            _context.Utilisateurs.Remove(utilisateur);
-            await _context.SaveChangesAsync();
-
-            return NoContent();
-        }
-    }
+          //  return NoContent();
+       // }
+  //  }
 }
 

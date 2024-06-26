@@ -80,3 +80,25 @@ W:\1.55)--DEV-TC\cours-SITE-RENCONT\5.45)__GIT\so2m-test5\SO2M\Serveur\BD\obj\De
 W:\1.55)--DEV-TC\cours-SITE-RENCONT\5.45)__GIT\so2m-test5\SO2M\Serveur\BD\obj\Debug\net8.0\refint\BD.dll
 W:\1.55)--DEV-TC\cours-SITE-RENCONT\5.45)__GIT\so2m-test5\SO2M\Serveur\BD\obj\Debug\net8.0\BD.pdb
 W:\1.55)--DEV-TC\cours-SITE-RENCONT\5.45)__GIT\so2m-test5\SO2M\Serveur\BD\obj\Debug\net8.0\ref\BD.dll
+C:\Users\user\Downloads\SO2M-main (1)\SO2M-main\Serveur\BD\bin\Debug\net8.0\BD.deps.json
+C:\Users\user\Downloads\SO2M-main (1)\SO2M-main\Serveur\BD\bin\Debug\net8.0\BD.dll
+C:\Users\user\Downloads\SO2M-main (1)\SO2M-main\Serveur\BD\bin\Debug\net8.0\BD.pdb
+C:\Users\user\Downloads\SO2M-main (1)\SO2M-main\Serveur\BD\obj\Debug\net8.0\BD.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Downloads\SO2M-main (1)\SO2M-main\Serveur\BD\obj\Debug\net8.0\BD.AssemblyInfoInputs.cache
+C:\Users\user\Downloads\SO2M-main (1)\SO2M-main\Serveur\BD\obj\Debug\net8.0\BD.AssemblyInfo.cs
+C:\Users\user\Downloads\SO2M-main (1)\SO2M-main\Serveur\BD\obj\Debug\net8.0\BD.csproj.CoreCompileInputs.cache
+C:\Users\user\Downloads\SO2M-main (1)\SO2M-main\Serveur\BD\obj\Debug\net8.0\BD.dll
+C:\Users\user\Downloads\SO2M-main (1)\SO2M-main\Serveur\BD\obj\Debug\net8.0\refint\BD.dll
+C:\Users\user\Downloads\SO2M-main (1)\SO2M-main\Serveur\BD\obj\Debug\net8.0\BD.pdb
+C:\Users\user\Downloads\SO2M-main (1)\SO2M-main\Serveur\BD\obj\Debug\net8.0\ref\BD.dll
+C:\Users\user\Downloads\SO2M-main (2) (1)\SO2M-main (1)\SO2M-main\Serveur\BD\bin\Debug\net8.0\BD.deps.json
+C:\Users\user\Downloads\SO2M-main (2) (1)\SO2M-main (1)\SO2M-main\Serveur\BD\bin\Debug\net8.0\BD.dll
+C:\Users\user\Downloads\SO2M-main (2) (1)\SO2M-main (1)\SO2M-main\Serveur\BD\bin\Debug\net8.0\BD.pdb
+C:\Users\user\Downloads\SO2M-main (2) (1)\SO2M-main (1)\SO2M-main\Serveur\BD\obj\Debug\net8.0\BD.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Downloads\SO2M-main (2) (1)\SO2M-main (1)\SO2M-main\Serveur\BD\obj\Debug\net8.0\BD.AssemblyInfoInputs.cache
+C:\Users\user\Downloads\SO2M-main (2) (1)\SO2M-main (1)\SO2M-main\Serveur\BD\obj\Debug\net8.0\BD.AssemblyInfo.cs
+C:\Users\user\Downloads\SO2M-main (2) (1)\SO2M-main (1)\SO2M-main\Serveur\BD\obj\Debug\net8.0\BD.csproj.CoreCompileInputs.cache
+C:\Users\user\Downloads\SO2M-main (2) (1)\SO2M-main (1)\SO2M-main\Serveur\BD\obj\Debug\net8.0\BD.dll
+C:\Users\user\Downloads\SO2M-main (2) (1)\SO2M-main (1)\SO2M-main\Serveur\BD\obj\Debug\net8.0\refint\BD.dll
+C:\Users\user\Downloads\SO2M-main (2) (1)\SO2M-main (1)\SO2M-main\Serveur\BD\obj\Debug\net8.0\BD.pdb
+C:\Users\user\Downloads\SO2M-main (2) (1)\SO2M-main (1)\SO2M-main\Serveur\BD\obj\Debug\net8.0\ref\BD.dll

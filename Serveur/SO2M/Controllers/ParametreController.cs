@@ -46,7 +46,19 @@ namespace SO2M.Controllers
             }
 
             Console.WriteLine("Utilisateur trouvé : " + utilisateur.Username);
-            return Ok(utilisateur);
+            return Ok(new
+            {
+                utilisateur.Nom,
+                utilisateur.Prenom,
+                utilisateur.Username,
+                utilisateur.Age,
+                utilisateur.Genre,
+                utilisateur.NiveauAcademique,
+                utilisateur.OrientationS,
+                utilisateur.Courriel,
+                utilisateur.ProfilePhoto,
+                Photo1_data = utilisateur.Photo1_data // assuming it's base64 encoded
+            });
         }
 
         // Méthode pour mettre à jour les informations du profil de l'utilisateur connecté
@@ -79,6 +91,8 @@ namespace SO2M.Controllers
             utilisateur.OrientationS = updatedUtilisateur.OrientationS;
             utilisateur.Courriel = updatedUtilisateur.Courriel;
             utilisateur.Username = updatedUtilisateur.Username;
+            utilisateur.MotDePasse = HashPassword(updatedUtilisateur.MotDePasse);
+            utilisateur.Photo1_data = updatedUtilisateur.Photo1_data;
 
             if (!string.IsNullOrEmpty(updatedUtilisateur.MotDePasse))
             {

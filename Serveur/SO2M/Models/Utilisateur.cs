@@ -19,7 +19,11 @@ namespace SO2M.Models
         public DateOnly? DateCreationProfil { get; set; }
         public int? CritereRechercheId { get; set; }
         public int? ModelPsycologiqueId { get; set; }
+        // Collection de posts associés à cet utilisateur
         
+
+        public ICollection<Post> Posts { get; set; }
+
         //----------- added 24-06-22-------------
         public int? Modele1Axe1 { get; set; }
         public int? Modele1Axe2 { get; set; }
@@ -48,5 +52,9 @@ namespace SO2M.Models
         public virtual ICollection<Utilisateur> UtilisateursNavigation { get; set; } = new List<Utilisateur>();
         public virtual ICollection<Message> MessagesEnvoyés { get; set; } = new List<Message>(); // Ajout des messages envoyés
         public virtual ICollection<Message> MessagesReçus { get; set; } = new List<Message>(); // Ajout des messages reçus
+
+
+
+      
     }
 }
