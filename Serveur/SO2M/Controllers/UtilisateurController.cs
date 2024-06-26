@@ -166,7 +166,7 @@ public IActionResult Login([FromForm] string username, [FromForm] string motDePa
             return Ok(new
             {
                 utilisateur.Username,
-                ProfilePhotoURL = "/path/to/profile/photo.jpg" // Remplacez par la vraie URL de la photo de profil
+                utilisateur.Photo1_data
             });
         }
 

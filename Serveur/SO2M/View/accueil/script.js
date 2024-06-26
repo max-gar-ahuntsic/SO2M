@@ -12,8 +12,11 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .then(data => {
             document.getElementById('username').textContent = data.Username;
-            document.getElementById('profile-photo').src = data.ProfilePhotoURL;
-            loadPosts();
+            if (data.photo1_data != null)
+            {
+                let photoSourceData = 'data:image/png;base64,' + data.photo1_data ;
+                document.getElementById('profile-photo').setAttribute("src", photoSourceData);
+            }
         })
         .catch(error => {
             window.location.href = '/view/wwwroot/login.html';
