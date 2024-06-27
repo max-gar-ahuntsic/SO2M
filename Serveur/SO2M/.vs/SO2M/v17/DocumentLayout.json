@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-test6\\SO2M\\Serveur\\SO2M\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|w:\\1.55)--dev-tc\\cours-site-rencont\\5.45)__git\\so2m-test6\\so2m\\serveur\\so2m\\controllers\\utilisateurcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|solutionrelative:controllers\\utilisateurcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|w:\\1.55)--dev-tc\\cours-site-rencont\\5.45)__git\\so2m-test6\\so2m\\serveur\\so2m\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|w:\\1.55)--dev-tc\\cours-site-rencont\\5.45)__git\\so2m-test6\\so2m\\serveur\\so2m\\view\\accueil\\accueil.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|solutionrelative:view\\accueil\\accueil.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -19,10 +27,6 @@
       "RelativeMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|solutionrelative:view\\parametre\\modifier profil.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|w:\\1.55)--dev-tc\\cours-site-rencont\\5.45)__git\\so2m-test6\\so2m\\serveur\\so2m\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|w:\\1.55)--dev-tc\\cours-site-rencont\\5.45)__git\\so2m-test6\\so2m\\serveur\\so2m\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -33,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|w:\\1.55)--dev-tc\\cours-site-rencont\\5.45)__git\\so2m-test6\\so2m\\serveur\\so2m\\controllers\\parametrecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|solutionrelative:controllers\\parametrecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|w:\\1.55)--dev-tc\\cours-site-rencont\\5.45)__git\\so2m-test6\\so2m\\serveur\\so2m\\controllers\\utilisateurcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|solutionrelative:controllers\\utilisateurcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E9B97EAF-5ACE-4AEC-B857-4FBB6109ED95}|SO2M.csproj|w:\\1.55)--dev-tc\\cours-site-rencont\\5.45)__git\\so2m-test6\\so2m\\serveur\\so2m\\view\\accueil\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -129,7 +129,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -137,19 +137,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-test6\\SO2M\\Serveur\\SO2M\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-test6\\SO2M\\Serveur\\SO2M\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-06T22:31:57.923Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Startup.cs",
               "DocumentMoniker": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-test6\\SO2M\\Serveur\\SO2M\\Startup.cs",
               "RelativeDocumentMoniker": "Startup.cs",
@@ -161,19 +149,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "UtilisateurController.cs",
               "DocumentMoniker": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-test6\\SO2M\\Serveur\\SO2M\\Controllers\\UtilisateurController.cs",
               "RelativeDocumentMoniker": "Controllers\\UtilisateurController.cs",
               "ToolTip": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-test6\\SO2M\\Serveur\\SO2M\\Controllers\\UtilisateurController.cs",
               "RelativeToolTip": "Controllers\\UtilisateurController.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAzwEcAAAAJAAAA",
+              "ViewState": "AQIAACgAAAAAAAAAAAAiwCwAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T17:37:47.956Z"
+              "WhenOpened": "2024-06-13T17:37:47.956Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "profil.html",
               "DocumentMoniker": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-test6\\SO2M\\Serveur\\SO2M\\View\\accueil\\profil.html",
               "RelativeDocumentMoniker": "View\\accueil\\profil.html",
@@ -181,12 +170,11 @@
               "RelativeToolTip": "View\\accueil\\profil.html",
               "ViewState": "AQIAACoAAAAAAAAAAAAAABcAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-06-21T04:13:11.517Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-21T04:13:11.517Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "accueil.html",
               "DocumentMoniker": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-test6\\SO2M\\Serveur\\SO2M\\View\\accueil\\accueil.html",
               "RelativeDocumentMoniker": "View\\accueil\\accueil.html",
@@ -199,19 +187,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-test6\\SO2M\\Serveur\\SO2M\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-test6\\SO2M\\Serveur\\SO2M\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAFEAAAAAAAAAAAAAABYAAAAQAAAA",
+              "ViewState": "AQIAAFwAAAAAAAAAAAAiwGMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T22:35:26.919Z"
+              "WhenOpened": "2024-06-06T22:35:26.919Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-test6\\SO2M\\Serveur\\SO2M\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-test6\\SO2M\\Serveur\\SO2M\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-06T22:31:57.923Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "PostController.cs",
               "DocumentMoniker": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-test6\\SO2M\\Serveur\\SO2M\\Controllers\\PostController.cs",
               "RelativeDocumentMoniker": "Controllers\\PostController.cs",
@@ -219,12 +220,11 @@
               "RelativeToolTip": "Controllers\\PostController.cs",
               "ViewState": "AQIAABMAAAAAAAAAAAAgwDkAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T04:09:02.339Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-25T04:09:02.339Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Modifier Profil.html",
               "DocumentMoniker": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-test6\\SO2M\\Serveur\\SO2M\\View\\parametre\\Modifier Profil.html",
               "RelativeDocumentMoniker": "View\\parametre\\Modifier Profil.html",
@@ -232,12 +232,11 @@
               "RelativeToolTip": "View\\parametre\\Modifier Profil.html",
               "ViewState": "AQIAAKAAAAAAAAAAAAAiwGYAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-06-21T04:16:11.614Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-21T04:16:11.614Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ParametreController.cs",
               "DocumentMoniker": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-test6\\SO2M\\Serveur\\SO2M\\Controllers\\ParametreController.cs",
               "RelativeDocumentMoniker": "Controllers\\ParametreController.cs",

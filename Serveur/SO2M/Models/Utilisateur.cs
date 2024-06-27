@@ -22,7 +22,7 @@ namespace SO2M.Models
         // Collection de posts associés à cet utilisateur
         
 
-        public ICollection<Post> Posts { get; set; }
+        public ICollection<Post>? Posts { get; set; }
 
         //----------- added 24-06-22-------------
         public int? Modele1Axe1 { get; set; }
