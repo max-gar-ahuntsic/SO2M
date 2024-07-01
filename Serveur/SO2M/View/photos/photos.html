@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil Utilisateur</title>
+    <title>photo utilisateur</title>
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
@@ -18,14 +18,14 @@
             <div class="logo">SO2M</div>
             <div class="nav-center">
                 <a href="/view/parametre/Modifier Profil.html" class="nav-link"><i class="fas fa-cog" id="settings-button"></i></a>
-                <a href="/view/questionnaire/questionnaire.html" class="nav-link"><i class="fa fa-plus" id="questionnaire-button"></i></a>
+                <a href="/view/questionnaire/questionnaire.html" class="nav-link"><i class="fas fa-edit" id="questionnaire-button"></i></a>
                 <a href="/view/recherche/recherchePartenaire.html" class="nav-link"><i class="fas fa-search" id="search-button"></i></a>
                 <a href="/view/photos/photos.html" class="nav-link"><i class="fas fa-camera" id="photo-button"></i></a>
-                <a href="/view/favoris/favoris.html" class="nav-link"><i class="fas fa-star" id="favorites-button"></i></a>
+                <a href="/view/favoris/favoris.html" class="nav-link"><i class="fab fa-cc-visa" id="favorites-button"></i></a>
                 <a href="/view/matchs/matchs.html" class="nav-link"><i class="fas fa-user-circle" id="profil-button"></i></a>
                 <a href="/view/accueil/accueil.html" class="nav-link"><i class="fas fa-home" id="home-button"></i></a>
-                <a href="/view/messagerie/messagerie.html" class="nav-link"><i class="fas fa-envelope" id="message-button"></i></a>
-                <a href="/view/login/login.html" class="nav-link"><i class="fas fa-sign-out-alt" id="logout-button"></i></a>
+                <a href="/view/messagerie/messagerie.html" class="nav-link"><i class="far fa-comments" id="message-button"></i></a>
+                <a href="/view/wwwroot/login.html" class="nav-link"><i class="fas fa-sign-out-alt" id="logout-button"></i></a>
             </div>
             <div class="user-info">
                 <img id="profile-photo" src="" alt="Photo de Profil">
@@ -43,7 +43,7 @@
     </body>
     <script>
 
-    </script>
+</script>
     <br>
     <br>
 
@@ -59,29 +59,28 @@
     <script>
        /*  document.addEventListener('DOMContentLoaded', () => {
             // Vérifier si l'utilisateur est connecté
-            fetch('http://localhost:5160/api/utilisateur/current', {
-                credentials: 'same-origin' // Assurez-vous que les cookies de session sont envoyés
-            })
-                .then(response => {
-                    if (!response.ok) {
-                        console.log('Redirection vers la page de connexion : ', response.statusText);
-                        window.location.href = '/FrontEnd/wwwroot/login.html';
-                        return;
-                    }
-                    return response.json();
-                })
-                .then(data => {
-                    if (data) {
-                        console.log('Données de l\'utilisateur : ', data);
-                        document.getElementById('username').textContent = data.Username;
-                        document.getElementById('profile-photo').src = data.ProfilePhotoURL;
-                    }
-                })
-                .catch(error => {
-                    console.error('Erreur lors de la récupération de l\'utilisateur :', error);
-                    window.location.href = '/FrontEnd/wwwroot/login.html';
-                });
-        }); */
+           fetch('http://localhost:5160/api/utilisateur/current', {
+    credentials: 'same-origin'
+})
+    .then(response => {
+        if (!response.ok) {
+            console.log('Redirection vers la page de connexion : ', response.statusText);
+            window.location.href = '/view/wwwroot/login.html';
+            return;
+        }
+        return response.json();
+    })
+    .then(data => {
+        if (data) {
+            console.log('Données de l\'utilisateur : ', data);
+            document.getElementById('user-name').textContent = data.username;
+            document.getElementById('profile-photo').src = 'data:image/png;base64,';
+        }
+    })
+    .catch(error => {
+        console.error('Erreur lors de la récupération de l\'utilisateur :', error);
+        window.location.href = '/view/wwwroot/login.html';
+    });*
     </script>
 
     <footer>

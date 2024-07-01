@@ -102,15 +102,27 @@ C:\Users\user\Downloads\SO2M-main (2) (1)\SO2M-main (1)\SO2M-main\Serveur\BD\obj
 C:\Users\user\Downloads\SO2M-main (2) (1)\SO2M-main (1)\SO2M-main\Serveur\BD\obj\Debug\net8.0\refint\BD.dll
 C:\Users\user\Downloads\SO2M-main (2) (1)\SO2M-main (1)\SO2M-main\Serveur\BD\obj\Debug\net8.0\BD.pdb
 C:\Users\user\Downloads\SO2M-main (2) (1)\SO2M-main (1)\SO2M-main\Serveur\BD\obj\Debug\net8.0\ref\BD.dll
-W:\1.55)--DEV-TC\cours-SITE-RENCONT\5.45)__GIT\so2m-test6\SO2M\Serveur\BD\bin\Debug\net8.0\BD.deps.json
-W:\1.55)--DEV-TC\cours-SITE-RENCONT\5.45)__GIT\so2m-test6\SO2M\Serveur\BD\bin\Debug\net8.0\BD.dll
-W:\1.55)--DEV-TC\cours-SITE-RENCONT\5.45)__GIT\so2m-test6\SO2M\Serveur\BD\bin\Debug\net8.0\BD.pdb
-W:\1.55)--DEV-TC\cours-SITE-RENCONT\5.45)__GIT\so2m-test6\SO2M\Serveur\BD\obj\Debug\net8.0\BD.GeneratedMSBuildEditorConfig.editorconfig
-W:\1.55)--DEV-TC\cours-SITE-RENCONT\5.45)__GIT\so2m-test6\SO2M\Serveur\BD\obj\Debug\net8.0\BD.AssemblyInfoInputs.cache
-W:\1.55)--DEV-TC\cours-SITE-RENCONT\5.45)__GIT\so2m-test6\SO2M\Serveur\BD\obj\Debug\net8.0\BD.AssemblyInfo.cs
-W:\1.55)--DEV-TC\cours-SITE-RENCONT\5.45)__GIT\so2m-test6\SO2M\Serveur\BD\obj\Debug\net8.0\BD.csproj.CoreCompileInputs.cache
-W:\1.55)--DEV-TC\cours-SITE-RENCONT\5.45)__GIT\so2m-test6\SO2M\Serveur\BD\obj\Debug\net8.0\BD.sourcelink.json
-W:\1.55)--DEV-TC\cours-SITE-RENCONT\5.45)__GIT\so2m-test6\SO2M\Serveur\BD\obj\Debug\net8.0\BD.dll
-W:\1.55)--DEV-TC\cours-SITE-RENCONT\5.45)__GIT\so2m-test6\SO2M\Serveur\BD\obj\Debug\net8.0\refint\BD.dll
-W:\1.55)--DEV-TC\cours-SITE-RENCONT\5.45)__GIT\so2m-test6\SO2M\Serveur\BD\obj\Debug\net8.0\BD.pdb
-W:\1.55)--DEV-TC\cours-SITE-RENCONT\5.45)__GIT\so2m-test6\SO2M\Serveur\BD\obj\Debug\net8.0\ref\BD.dll
+C:\PortableGit\projecte\SO2M\Serveur\BD\bin\Debug\net8.0\BD.deps.json
+C:\PortableGit\projecte\SO2M\Serveur\BD\bin\Debug\net8.0\BD.dll
+C:\PortableGit\projecte\SO2M\Serveur\BD\bin\Debug\net8.0\BD.pdb
+C:\PortableGit\projecte\SO2M\Serveur\BD\obj\Debug\net8.0\BD.GeneratedMSBuildEditorConfig.editorconfig
+C:\PortableGit\projecte\SO2M\Serveur\BD\obj\Debug\net8.0\BD.AssemblyInfoInputs.cache
+C:\PortableGit\projecte\SO2M\Serveur\BD\obj\Debug\net8.0\BD.AssemblyInfo.cs
+C:\PortableGit\projecte\SO2M\Serveur\BD\obj\Debug\net8.0\BD.csproj.CoreCompileInputs.cache
+C:\PortableGit\projecte\SO2M\Serveur\BD\obj\Debug\net8.0\BD.sourcelink.json
+C:\PortableGit\projecte\SO2M\Serveur\BD\obj\Debug\net8.0\BD.dll
+C:\PortableGit\projecte\SO2M\Serveur\BD\obj\Debug\net8.0\refint\BD.dll
+C:\PortableGit\projecte\SO2M\Serveur\BD\obj\Debug\net8.0\BD.pdb
+C:\PortableGit\projecte\SO2M\Serveur\BD\obj\Debug\net8.0\ref\BD.dll
+C:\PortableGit\projecte\SO2M1\SO2M\Serveur\BD\bin\Debug\net8.0\BD.deps.json
+C:\PortableGit\projecte\SO2M1\SO2M\Serveur\BD\bin\Debug\net8.0\BD.dll
+C:\PortableGit\projecte\SO2M1\SO2M\Serveur\BD\bin\Debug\net8.0\BD.pdb
+C:\PortableGit\projecte\SO2M1\SO2M\Serveur\BD\obj\Debug\net8.0\BD.GeneratedMSBuildEditorConfig.editorconfig
+C:\PortableGit\projecte\SO2M1\SO2M\Serveur\BD\obj\Debug\net8.0\BD.AssemblyInfoInputs.cache
+C:\PortableGit\projecte\SO2M1\SO2M\Serveur\BD\obj\Debug\net8.0\BD.AssemblyInfo.cs
+C:\PortableGit\projecte\SO2M1\SO2M\Serveur\BD\obj\Debug\net8.0\BD.csproj.CoreCompileInputs.cache
+C:\PortableGit\projecte\SO2M1\SO2M\Serveur\BD\obj\Debug\net8.0\BD.sourcelink.json
+C:\PortableGit\projecte\SO2M1\SO2M\Serveur\BD\obj\Debug\net8.0\BD.dll
+C:\PortableGit\projecte\SO2M1\SO2M\Serveur\BD\obj\Debug\net8.0\refint\BD.dll
+C:\PortableGit\projecte\SO2M1\SO2M\Serveur\BD\obj\Debug\net8.0\BD.pdb
+C:\PortableGit\projecte\SO2M1\SO2M\Serveur\BD\obj\Debug\net8.0\ref\BD.dll

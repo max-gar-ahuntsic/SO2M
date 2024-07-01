@@ -18,18 +18,18 @@
             <div class="logo">SO2M</div>
             <div class="nav-center">
                 <a href="/view/parametre/Modifier Profil.html" class="nav-link"><i class="fas fa-cog" id="settings-button"></i></a>
-                <a href="/view/questionnaire/questionnaire.html" class="nav-link"><i class="fa fa-plus" id="questionnaire-button"></i></a>
+                <a href="/view/questionnaire/questionnaire.html" class="nav-link"><i class="fas fa-edit" id="questionnaire-button"></i></a>
                 <a href="/view/recherche/recherchePartenaire.html" class="nav-link"><i class="fas fa-search" id="search-button"></i></a>
-                <a href="/view/photos/photos.html" class="nav-link"><i class="fas fa-camera" id="photo-button"></i></a>
-                <a href="/view/favoris/favoris.html" class="nav-link"><i class="fas fa-star" id="favorites-button"></i></a>
+                <a href="/view/photos/listeProfilsPublics2.html" class="nav-link"><i class="fas fa-address-card" id="photo-button"></i></a>
+                <a href="/view/favoris/favoris.html" class="nav-link"><i class="fab fa-cc-visa" id="favorites-button"></i></a>
                 <a href="/view/matchs/matchs.html" class="nav-link"><i class="fas fa-user-circle" id="profil-button"></i></a>
                 <a href="/view/accueil/accueil.html" class="nav-link"><i class="fas fa-home" id="home-button"></i></a>
-                <a href="/view/messagerie/messagerie.html" class="nav-link"><i class="fas fa-envelope" id="message-button"></i></a>
+                <a href="/view/messagerie/messagerie.html" class="nav-link"><i class="far fa-comments" id="message-button"></i></a>
                 <a href="/view/wwwroot/login.html" class="nav-link"><i class="fas fa-sign-out-alt" id="logout-button"></i></a>
             </div>
             <div class="user-info">
-                <img id="profile-photo" src="" alt="Photo de Profil">
-                <span id="username"></span>
+                
+                <span id="user-name"></span>
             </div>
         </div>
     </header>
@@ -38,15 +38,26 @@
         <div class="form-container">
             <h2>Recherche Partenaire</h2>
             <form id="modificationProfilForm">
-                
+
                 <div class="form-group">
                     <label for="ageMin">Age minimal</label>
-                    <input type="int" class="form-control" id="ageMin" name="ageMin" required>
+                    <input type="number" class="form-control" id="ageMin" name="ageMin" required>
                 </div>
                 <div class="form-group">
                     <label for="ageMax">Age maximal</label>
-                    <input type="int" class="form-control" id="ageMax" name="ageMax" required>
+                    <input type="number" class="form-control" id="ageMax" name="ageMax" required>
                 </div>
+                <!--
+                <div class="form-group">
+                    <label for="ville"> ville</label>
+                    <input type="text" class="form-control" id="ville" name="ville" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="rayonRecherche">Rayon de recherche</label>
+                    <input type="int" class="form-control" id="rayonRecherche" name="rayonRecherche" required>
+                </div>
+                -->
                 <div class="form-group">
                     <label for="niveauAcademique">Niveau Académique</label>
                     <select class="form-control" id="niveauAcademique" name="niveauAcademique" required>
@@ -72,8 +83,6 @@
                     </select>
                 </div>
 
-
-
                 <button type="button" onclick="submitForm()" class="btn btn-primary btn-block">Lancer Recherche</button>
             </form>
         </div>
@@ -82,8 +91,8 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             // Vérifier si l'utilisateur est connecté
-            fetch('/api/utilisateur/current', {
-                credentials: 'same-origin' // Assurez-vous que les cookies de session sont envoyés
+            fetch('http://localhost:5160/api/utilisateur/current', {
+                credentials: 'same-origin'
             })
                 .then(response => {
                     if (!response.ok) {
@@ -96,14 +105,8 @@
                 .then(data => {
                     if (data) {
                         console.log('Données de l\'utilisateur : ', data);
-                        document.getElementById('username').textContent = data.Username;
-
-                        if (data.photo1_data != null)
-                        {
-                            let photoSourceData = 'data:image/png;base64,' + data.photo1_data + '';
-                            document.getElementById('profile-photo').setAttribute("src", photoSourceData);
-                        }
-
+                        document.getElementById('user-name').textContent = data.username;
+                        //document.getElementById('profile-photo').src = 'data:image/png;base64,' + data.photo1_data;
                     }
                 })
                 .catch(error => {
@@ -119,17 +122,16 @@
                     .catch(error => console.error('Error:', error));
             });
         });
-     
- 
+
         document.addEventListener('DOMContentLoaded', () => {
-            fetch('/api/recherchePart/getCriteres', 
-            {
-                method: 'GET',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${localStorage.getItem('token')}`
-                }
-            })
+            fetch('/api/recherchePart/getCriteres',
+                {
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${localStorage.getItem('token')}`
+                    }
+                })
                 .then(response => response.json())
                 .then(data => {
                     document.getElementById('genre').value = data.genre;
@@ -137,9 +139,9 @@
                     document.getElementById('ageMax').value = data.ageMax;
                     document.getElementById('niveauAcademique').value = data.niveauAcademique;
                     document.getElementById('orientationS').value = data.orientationS;
-                    //document.getElementById('ville').value = data.ville;
-                    //document.getElementById('rayonRecherche').value = data.rayonRecherche;
-                 })
+                    //document.getElementById('profile-photo').src = 'data:image/png;base64,' + data.photo1_data;
+
+                })
                 .catch(error => {
                     console.error('Erreur lors de la récupération des données du profil:', error);
                 });
@@ -158,7 +160,7 @@
                 .then(response => {
                     if (response.ok) {
                         console.log(' mis à jour avec succès.');
-                        window.location.href = '/view/matchs/matchs.html'; // Redirection en cas de succès
+                        window.location.href = '/view/photos/listeProfilsPublics2.html'; // Redirection en cas de succès
                     } else {
                         console.error('Erreur lors de la modification :', response.statusText);
                     }
@@ -169,45 +171,9 @@
         }
     </script>
 
-<footer>
-    <div class="footer-top">
-        <div class="footer-column">
-            <h3>Group 07915</h3>
-            <p>9155, rue St-Hubert, Montréal, QC H2M 1Y8</p>
-            <p>(514) 389-5921</p>
-        </div>
-        <div class="footer-column">
-            <h3>En savoir plus</h3>
-            <ul>
-                <li><a href="#">A propos</a></li>
-                <li><a href="#">Contactez nous</a></li>
-                <li><a href="#">Advertise</a></li>
-                <li><a href="#">Terms de services</a></li>
-                <li><a href="#">Politique de privacité</a></li>
-            </ul>
-        </div>
-        <div class="footer-column">
-            <h3>Notre bulletin d'information</h3>
-            <p>Abonnez-vous à notre newsletter pour recevoir nos actualités et nos remises directement dans votre
-                boîte
-                de réception.</p>
-            <form action="#" method="post">
-                <input type="email" placeholder="Email Address">
-                <button type="submit">S'abonner</button>
-            </form>
-        </div>
-    </div>
-    <div class="footer-bottom">
+    <footer>
         <p>&copy; 2024 SO2M. Tous droits réservés.</p>
-        <p>Projet Integrateur développé par Group: SO2M</p>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-        </div>
-    </div>
-</footer>
+    </footer>
 </body>
 
 </html>

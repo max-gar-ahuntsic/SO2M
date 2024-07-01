@@ -42,25 +42,21 @@ namespace SO2M.Controllers
                 return BadRequest("Le mot de passe doit contenir au moins 8 caractères, une majuscule, une minuscule, un chiffre et un caractère spécial.");
             }
 
-            if (utilisateur.ProfilePhoto != null)
+            if (utilisateur.ProfilePhoto.Length > 700000)
             {
-                if (utilisateur.ProfilePhoto.Length > 700000)
-                {
-                    Console.WriteLine("fic initial grosseur: " + utilisateur.ProfilePhoto.Length);
-                    return BadRequest("Le fichier est trop volumineux. 650kb maximum.");
-                }
-                else
-                { 
-                    using var ms = new MemoryStream();
-                    await utilisateur.ProfilePhoto.CopyToAsync(ms);
-                    byte[] photoArray = ms.ToArray();
-                    string photoBase64 = Convert.ToBase64String(photoArray);
-                    utilisateur.Photo1_data = photoBase64;
+                Console.WriteLine("fic initial grosseur: " + utilisateur.ProfilePhoto.Length);
+                return BadRequest("Le fichier est trop volumineux. 650kb maximum.");
+            }
+            else
+            { 
+                using var ms = new MemoryStream();
+                await utilisateur.ProfilePhoto.CopyToAsync(ms);
+                byte[] photoArray = ms.ToArray();
+                string photoBase64 = Convert.ToBase64String(photoArray);
+                utilisateur.Photo1_data = photoBase64;
 
-                    Console.WriteLine("fic initial grosseur: " + utilisateur.ProfilePhoto.Length);
-                    Console.WriteLine("grosseur base64: " + photoBase64.Length);
-                }
-                    
+                Console.WriteLine("fic initial grosseur: " + utilisateur.ProfilePhoto.Length);
+                Console.WriteLine("grosseur base64: " + photoBase64.Length);
             }
 
 
@@ -170,7 +166,7 @@ public IActionResult Login([FromForm] string username, [FromForm] string motDePa
             return Ok(new
             {
                 utilisateur.Username,
-                utilisateur.Photo1_data
+                ProfilePhotoURL = "utilisateur.Photo1_data" // Remplacez par la vraie URL de la photo de profil
             });
         }
 

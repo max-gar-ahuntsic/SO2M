@@ -1,3 +1,4 @@
+/* styles.css */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -31,10 +32,10 @@ header {
     gap: 20px;
 }
 
-.nav-center i {
-    font-size: 20px;
-    cursor: pointer;
-}
+    .nav-center i {
+        font-size: 20px;
+        cursor: pointer;
+    }
 
 .user-info {
     display: flex;
@@ -42,11 +43,11 @@ header {
     gap: 10px;
 }
 
-.user-info img {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-}
+    .user-info img {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+    }
 
 main {
     padding: 20px;
@@ -64,15 +65,37 @@ main {
     margin-bottom: 20px;
 }
 
-.post-box textarea {
-    width: 100%;
+    .post-box textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        resize: none;
+    }
+
+    .post-box button {
+        display: block;
+        background-color: #BD7FBE;
+        color: white;
+        border: none;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        .post-box button:hover {
+            background-color: #A166A7;
+        }
+
+.posts .post {
+    background-color: #fff;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    resize: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
-.post-box button {
+.btn-supp {
     display: block;
     background-color: #BD7FBE;
     color: white;
@@ -83,32 +106,8 @@ main {
     cursor: pointer;
 }
 
-.post-box button:hover {
-    background-color: #BD7FBE;
-}
-
-.posts .post {
-    background-color: #fff;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-.btn-supp {
-    background-color: #d884d7;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
     .btn-supp:hover {
-        background-color: #c06fbf;
+        background-color: #A166A7;
     }
 
 .nav-link {
@@ -116,8 +115,21 @@ main {
     text-decoration: none;
 }
 
-.nav-link:hover {
-    color: #ddd;
+    .nav-link:hover {
+        color: #ddd;
+    }
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post-profile-photo {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
 }
 
 footer {
@@ -141,47 +153,47 @@ footer {
     padding: 10px;
 }
 
-.footer-column h3 {
-    margin-top: 0;
-}
+    .footer-column h3 {
+        margin-top: 0;
+    }
 
-.footer-column ul {
-    list-style-type: none;
-    padding: 0;
-}
+    .footer-column ul {
+        list-style-type: none;
+        padding: 0;
+    }
 
-.footer-column ul li {
-    margin-bottom: 10px;
-}
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
 
-.footer-column ul li a {
-    color: white;
-    text-decoration: none;
-}
+            .footer-column ul li a {
+                color: white;
+                text-decoration: none;
+            }
 
-.footer-column ul li a:hover {
-    text-decoration: underline;
-}
+                .footer-column ul li a:hover {
+                    text-decoration: underline;
+                }
 
 .footer-bottom {
     background-color: #A469A8;
     padding: 10px 0;
 }
 
-.footer-bottom p {
-    margin: 0;
-}
+    .footer-bottom p {
+        margin: 0;
+    }
 
-.footer-bottom .social-icons {
-    margin-top: 10px;
-}
+    .footer-bottom .social-icons {
+        margin-top: 10px;
+    }
 
-.footer-bottom .social-icons a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-}
+        .footer-bottom .social-icons a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
 
-.footer-bottom .social-icons a i {
-    font-size: 20px;
-}
+            .footer-bottom .social-icons a i {
+                font-size: 20px;
+            }

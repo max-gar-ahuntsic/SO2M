@@ -5,6 +5,8 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
+using System.IO;
 
 namespace SO2M.Controllers
 {
@@ -13,10 +15,12 @@ namespace SO2M.Controllers
     public class ParametreController : ControllerBase
     {
         private readonly DataContext _context;
+        private readonly IWebHostEnvironment _environment;
 
-        public ParametreController(DataContext context)
+        public ParametreController(DataContext context, IWebHostEnvironment environment)
         {
             _context = context;
+            _environment = environment;
         }
 
         // Méthode pour récupérer les informations du profil de l'utilisateur connecté
@@ -56,8 +60,7 @@ namespace SO2M.Controllers
                 utilisateur.NiveauAcademique,
                 utilisateur.OrientationS,
                 utilisateur.Courriel,
-                utilisateur.ProfilePhoto,
-                Photo1_data = utilisateur.Photo1_data // assuming it's base64 encoded
+                utilisateur.Photo1_data // assuming it's base64 encoded
             });
         }
 
@@ -85,18 +88,25 @@ namespace SO2M.Controllers
             // Mise à jour des informations de l'utilisateur connecté
             utilisateur.Nom = updatedUtilisateur.Nom;
             utilisateur.Prenom = updatedUtilisateur.Prenom;
+            utilisateur.Username = updatedUtilisateur.Username;
+            utilisateur.Age = updatedUtilisateur.Age;
             utilisateur.Genre = updatedUtilisateur.Genre;
             utilisateur.NiveauAcademique = updatedUtilisateur.NiveauAcademique;
-            utilisateur.Age = updatedUtilisateur.Age;
             utilisateur.OrientationS = updatedUtilisateur.OrientationS;
             utilisateur.Courriel = updatedUtilisateur.Courriel;
-            utilisateur.Username = updatedUtilisateur.Username;
-            utilisateur.MotDePasse = HashPassword(updatedUtilisateur.MotDePasse);
-            utilisateur.Photo1_data = updatedUtilisateur.Photo1_data;
 
             if (!string.IsNullOrEmpty(updatedUtilisateur.MotDePasse))
             {
                 utilisateur.MotDePasse = HashPassword(updatedUtilisateur.MotDePasse);
+            }
+
+            if (updatedUtilisateur.ProfilePhoto != null && updatedUtilisateur.ProfilePhoto.Length > 0)
+            {
+                using var ms = new MemoryStream();
+                await updatedUtilisateur.ProfilePhoto.CopyToAsync(ms);
+                byte[] photoArray = ms.ToArray();
+                string photoBase64 = Convert.ToBase64String(photoArray);
+                utilisateur.Photo1_data = photoBase64;
             }
 
             try
@@ -110,7 +120,7 @@ namespace SO2M.Controllers
                 return StatusCode(500, "Erreur interne du serveur. Veuillez réessayer plus tard.");
             }
 
-            return NoContent();
+            return Ok(new { message = "Profil mis à jour avec succès" });
         }
 
         // Méthode pour hasher le mot de passe
@@ -126,6 +136,28 @@ namespace SO2M.Controllers
                 }
                 return builder.ToString();
             }
+        }
+
+        // Méthode pour vérifier si le mot de passe est valide
+        private bool IsValidPassword(string password)
+        {
+            if (password.Length < 8)
+                return false;
+
+            bool hasUpperChar = false, hasLowerChar = false, hasDigit = false, hasSpecialChar = false;
+            foreach (var ch in password)
+            {
+                if (char.IsUpper(ch))
+                    hasUpperChar = true;
+                else if (char.IsLower(ch))
+                    hasLowerChar = true;
+                else if (char.IsDigit(ch))
+                    hasDigit = true;
+                else if (!char.IsLetterOrDigit(ch))
+                    hasSpecialChar = true;
+            }
+
+            return hasUpperChar && hasLowerChar && hasDigit && hasSpecialChar;
         }
     }
 }

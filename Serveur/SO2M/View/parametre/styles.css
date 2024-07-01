@@ -1,3 +1,4 @@
+/* styles.css */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -18,9 +19,9 @@ header {
     text-decoration: none;
 }
 
-.nav-link:hover {
-    color: #ddd;
-}
+    .nav-link:hover {
+        color: #ddd;
+    }
 
 .navbar {
     display: flex;
@@ -40,11 +41,11 @@ header {
     gap: 10px;
 }
 
-.user-info img {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-}
+    .user-info img {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+    }
 
 .nav-center {
     display: flex;
@@ -52,10 +53,10 @@ header {
     gap: 20px;
 }
 
-.nav-center i {
-    font-size: 20px;
-    cursor: pointer;
-}
+    .nav-center i {
+        font-size: 20px;
+        cursor: pointer;
+    }
 
 .container {
     display: flex;
@@ -75,10 +76,10 @@ header {
     max-width: 800px;
 }
 
-.form-container h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
+    .form-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
 
 .form-group {
     display: flex;
@@ -87,28 +88,28 @@ header {
     margin-bottom: 15px;
 }
 
-.form-group label {
-    flex: 1;
-    margin-bottom: 0;
-    color: #555;
-    font-weight: bold;
-}
+    .form-group label {
+        flex: 1;
+        margin-bottom: 0;
+        color: #555;
+        font-weight: bold;
+    }
 
-.form-group input,
-.form-group select {
-    flex: 2;
-    padding: 10px;
-    margin-left: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-}
+    .form-group input,
+    .form-group select {
+        flex: 2;
+        padding: 10px;
+        margin-left: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
 
-.form-group input:focus,
-.form-group select:focus {
-    border-color: #BD7FBE;
-    background-color: #fff;
-}
+        .form-group input:focus,
+        .form-group select:focus {
+            border-color: #BD7FBE;
+            background-color: #fff;
+        }
 
 .btn-primary {
     background-color: #BD7FBE;
@@ -121,16 +122,72 @@ header {
     font-size: 16px;
 }
 
-.btn-primary:hover {
-    background-color: #A166A7;
-}
+    .btn-primary:hover {
+        background-color: #A166A7;
+    }
 
 footer {
     background-color: #BD7FBE;
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
-    bottom: 0;
     width: 100%;
 }
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 10px;
+}
+
+    .footer-column h3 {
+        margin-top: 0;
+    }
+
+    .footer-column ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+
+            .footer-column ul li a {
+                color: white;
+                text-decoration: none;
+            }
+
+                .footer-column ul li a:hover {
+                    text-decoration: underline;
+                }
+
+.footer-bottom {
+    background-color: #A469A8;
+    padding: 10px 0;
+}
+
+    .footer-bottom p {
+        margin: 0;
+    }
+
+    .footer-bottom .social-icons {
+        margin-top: 10px;
+    }
+
+        .footer-bottom .social-icons a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+            .footer-bottom .social-icons a i {
+                font-size: 20px;
+            }

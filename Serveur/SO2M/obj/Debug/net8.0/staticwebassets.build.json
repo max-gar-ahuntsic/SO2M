@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "d7B7gjZo/3Io6Un9xAOZfDSEdtZrEQhW87Cxi5Rhgn0=",
+  "Hash": "U0P1N1FHbKQ1fR/4G48PiaV90iyiUBlqSBZWBJ6nB6w=",
   "Source": "SO2M",
   "BasePath": "_content/SO2M",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "SO2M\\wwwroot",
       "Source": "SO2M",
-      "ContentRoot": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-test6\\SO2M\\Serveur\\SO2M\\wwwroot\\",
+      "ContentRoot": "C:\\PortableGit\\projecte\\SO2M1\\SO2M\\Serveur\\SO2M\\wwwroot\\",
       "BasePath": "_content/SO2M",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-test6\\SO2M\\Serveur\\SO2M\\wwwroot\\uploads\\jouri.jpg",
+      "Identity": "C:\\PortableGit\\projecte\\SO2M1\\SO2M\\Serveur\\SO2M\\wwwroot\\uploads\\jouri.jpg",
       "SourceId": "SO2M",
       "SourceType": "Discovered",
-      "ContentRoot": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-test6\\SO2M\\Serveur\\SO2M\\wwwroot\\",
+      "ContentRoot": "C:\\PortableGit\\projecte\\SO2M1\\SO2M\\Serveur\\SO2M\\wwwroot\\",
       "BasePath": "_content/SO2M",
       "RelativePath": "uploads/jouri.jpg",
       "AssetKind": "All",
