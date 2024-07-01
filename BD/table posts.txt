@@ -1,7 +1,0 @@
-CREATE TABLE Posts (
-    Id INT PRIMARY KEY IDENTITY,
-    UserId INT,
-    Username NVARCHAR(50),
-    Content NVARCHAR(MAX),
-    DateCreated DATETIME,
-    FOREIGN KEY (UserId) REFERENCES Utilisateurs(Id)

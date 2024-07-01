@@ -126,3 +126,15 @@ C:\PortableGit\projecte\SO2M1\SO2M\Serveur\BD\obj\Debug\net8.0\BD.dll
 C:\PortableGit\projecte\SO2M1\SO2M\Serveur\BD\obj\Debug\net8.0\refint\BD.dll
 C:\PortableGit\projecte\SO2M1\SO2M\Serveur\BD\obj\Debug\net8.0\BD.pdb
 C:\PortableGit\projecte\SO2M1\SO2M\Serveur\BD\obj\Debug\net8.0\ref\BD.dll
+W:\1.55)--DEV-TC\cours-SITE-RENCONT\5.45)__GIT\so2m-testz--v-PROPRE-FINAL-REMISE\SO2M\Serveur\BD\bin\Debug\net8.0\BD.deps.json
+W:\1.55)--DEV-TC\cours-SITE-RENCONT\5.45)__GIT\so2m-testz--v-PROPRE-FINAL-REMISE\SO2M\Serveur\BD\bin\Debug\net8.0\BD.dll
+W:\1.55)--DEV-TC\cours-SITE-RENCONT\5.45)__GIT\so2m-testz--v-PROPRE-FINAL-REMISE\SO2M\Serveur\BD\bin\Debug\net8.0\BD.pdb
+W:\1.55)--DEV-TC\cours-SITE-RENCONT\5.45)__GIT\so2m-testz--v-PROPRE-FINAL-REMISE\SO2M\Serveur\BD\obj\Debug\net8.0\BD.GeneratedMSBuildEditorConfig.editorconfig
+W:\1.55)--DEV-TC\cours-SITE-RENCONT\5.45)__GIT\so2m-testz--v-PROPRE-FINAL-REMISE\SO2M\Serveur\BD\obj\Debug\net8.0\BD.AssemblyInfoInputs.cache
+W:\1.55)--DEV-TC\cours-SITE-RENCONT\5.45)__GIT\so2m-testz--v-PROPRE-FINAL-REMISE\SO2M\Serveur\BD\obj\Debug\net8.0\BD.AssemblyInfo.cs
+W:\1.55)--DEV-TC\cours-SITE-RENCONT\5.45)__GIT\so2m-testz--v-PROPRE-FINAL-REMISE\SO2M\Serveur\BD\obj\Debug\net8.0\BD.csproj.CoreCompileInputs.cache
+W:\1.55)--DEV-TC\cours-SITE-RENCONT\5.45)__GIT\so2m-testz--v-PROPRE-FINAL-REMISE\SO2M\Serveur\BD\obj\Debug\net8.0\BD.sourcelink.json
+W:\1.55)--DEV-TC\cours-SITE-RENCONT\5.45)__GIT\so2m-testz--v-PROPRE-FINAL-REMISE\SO2M\Serveur\BD\obj\Debug\net8.0\BD.dll
+W:\1.55)--DEV-TC\cours-SITE-RENCONT\5.45)__GIT\so2m-testz--v-PROPRE-FINAL-REMISE\SO2M\Serveur\BD\obj\Debug\net8.0\refint\BD.dll
+W:\1.55)--DEV-TC\cours-SITE-RENCONT\5.45)__GIT\so2m-testz--v-PROPRE-FINAL-REMISE\SO2M\Serveur\BD\obj\Debug\net8.0\BD.pdb
+W:\1.55)--DEV-TC\cours-SITE-RENCONT\5.45)__GIT\so2m-testz--v-PROPRE-FINAL-REMISE\SO2M\Serveur\BD\obj\Debug\net8.0\ref\BD.dll

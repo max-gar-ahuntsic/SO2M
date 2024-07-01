@@ -79,8 +79,9 @@ des données utilisateur. Des améliorations futures pourraient inclure des fonc
 1. Clonez le dépôt : `git clone https://github.com/max-gar-ahuntsic/SO2M.git`
 2. Naviguez dans le répertoire du projet : `cd so2m`
 3. Configurez la base de données dans `appsettings.json`
-4. Appliquez les migrations 
+4. Créer les tables via le script "BD/creation-des-tables.sql" (la BD 'SO2M' pourrait devoir être créée manuellement avant)
 5. Lancez l'application : `dotnet run`
+
 
 ### Utilisation
 
