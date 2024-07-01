@@ -147,7 +147,7 @@
               "RelativeDocumentMoniker": "View\\photos\\listeProfilsPublics2.html",
               "ToolTip": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-testz--v-PROPRE-FINAL-REMISE\\SO2M\\Serveur\\SO2M\\View\\photos\\listeProfilsPublics2.html",
               "RelativeToolTip": "View\\photos\\listeProfilsPublics2.html",
-              "ViewState": "AQIAAFoAAAAAAAAAAAAAAJYAAAAAAAAA",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAADsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2024-07-01T14:58:40.227Z",
               "EditorCaption": ""
@@ -198,8 +198,7 @@
               "RelativeToolTip": "Controllers\\UtilisateurController.cs",
               "ViewState": "AQIAACgAAAAAAAAAAAAiwDEAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T17:37:47.956Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-13T17:37:47.956Z"
             },
             {
               "$type": "Document",
