@@ -80,8 +80,7 @@
         </div>
     </header>
 
-    <!--<div class="container">-->
-    <!-- <div class="form-container"> -->
+ 
 
     <div id="content2">
         <h2>Résultat de votre recherche</h2>
@@ -91,24 +90,13 @@
     <br><br><br><br><br><br>
     <br><br><br><br><br><br>
     <br><br><br><br><br><br>
-    <!--
-    <div class="message-box">
-        <textarea id="message-content" placeholder="Quoi de neuf ?"></textarea>
-        <button class="btn-primary" id="message-button">Publier</button>
-    </div>
-    -->
-    <!-- </div> -->
-    <!--</div> -->
+ 
+
 
     <script>
 
-
-
-        let Id = 1 // ** A AJUSTER APRÈS QUE L'AUTHENTIFICATION SERAIT IMPLÉMENTÉE **
-
         document.addEventListener('DOMContentLoaded', () => {
             fetch('/api/recherchePart/getListeProfilsPublics',
-                //fetch('/api/recherchePart/getCriteres?' + new URLSearchParams({Id: 1}),
                 {
                     method: 'POST',
                     headers: {
@@ -118,39 +106,14 @@
                 })
                 .then(response => response.json())
                 .then(data => {
-                    /*
-                    var object = {};
-                    data.forEach(function(value, key){
-                    object[key] = value;
-                    });
-                    var json = JSON.stringify(object);
-                    */
                     var json = JSON.stringify(data);
 
-                    //alert(json);
-                    //document.getElementById('results').textContent = json;
-
-                    /*
-                        for(let i = 0; i < json.length; i++) {
-                        let obj = json[i];
-                        console.log(obj.id);
-                        }
-                    */
                     var buf = [];
 
                     let ele = "";
                     let totalResult = "";
                     for (let i = 0; i < data.length; i++) {
-                        //ele = JSON.stringify(data[i]);
                         ele = data[i];
-
-                        // console.log(obj.id);
-                        //document.getElementById('results').textContent = ele.nom;
-                        //document.getElementById('results').textContent = "fjsl";
-
-                        //buf.push(ele);
-                        //http://localhost:5160/view/rechercheResultat/listeprofilspublics.html
-
 
                         if (i === 0 || i === 4 || i === 8 || i === 12 || i === 16) {
                             buf.push('<div class="container2">');
@@ -178,70 +141,6 @@
 
                     document.getElementById('results').innerHTML = buf.join("");
 
-
-                    /*
-                   <div class="column">
-                     <h2> second column </h2>
-                     <p> This is second column of our grid system</p>
-                   </div>
-                   <div class="column">
-                     <h2> Third column </h2>
-                     <p> This is third column of our grid system</p>
-                   </div>
-                   <div class="column">
-                     <h2> Third column </h2>
-                     <p> This is third column of our grid system</p>
-                   </div>
-                </div>`);
-            */
-
-                    /*
-                    buf.push('<div class="container2">');
-                      buf.push('<div class="image">');
-                          buf.push('<img src="data:image/png;base64,' + ele.photo1_data + '" width="125" height="160">');
-                          buf.push("</div>");
-                          buf.push('<div class="text">');
-                              buf.push( `<h2>${ele.username}</h2>`);
-                              buf.push( `<p>${ele.prenom}</p>`);
-                              buf.push( `<p>${ele.age}</p>`);
-                              buf.push( `<p>${ele.niveauAcademique}</p>`);
-                              buf.push( `<p>${ele.genre}</p>`);
-                              buf.push( `<p>${ele.orientationS}</p>`);
-                              buf.push( '</div>');
-                              buf.push('</div>');
-
-                      *///if (i>10) break;
-
-
-                    // document.getElementById('results').innerText = json;
-
-                    //console.log(`I'm ${age} years old!`)
-
-                    /*
-                    var buf = [], i = 0;
-
-                    buf[i++] = '<div class="container">';
-                    buf[i++] = '<div class="image">';
-                    buf[i++] = '<img src="https://i.pinimg.com/564x/59/32/29/593229739184504afd9507cc42a9cb86.jpg">';
-                    buf[i++] = "</div>";
-                    buf[i++] = '<div class="text">';
-                    buf[i++] = '<h1>Paris is one of the most magnificient cities in France.</h1>';
-                    buf[i++] = '</div>';
-                    buf[i++] = '</div>';
-                    */
-
-                    //document.getElementById('results').innerText = buf.join("");
-                    //document.getElementById('results').innerHTML = buf.join("");
-
-                    /*
-                    document.getElementById('genre').value = data.genre;
-                    document.getElementById('ageMin').value = data.ageMin;
-                    document.getElementById('ageMax').value = data.ageMax;
-                    document.getElementById('niveauAcademique').value = data.niveauAcademique;
-                    document.getElementById('orientationS').value = data.orientationS;
-                    document.getElementById('ville').value = data.ville;
-                    document.getElementById('rayonRecherche').value = data.rayonRecherche;
-                    */
                 })
                 .catch(error => {
                     console.error('Erreur lors de la récupération des données du profil:', error);
@@ -249,7 +148,6 @@
         });
 
         function submitForm() {
-            let Id = 1 // ** A AJUSTER APRÈS QUE L'AUTHENTIFICATION SERAIT IMPLÉMENTÉE **
 
             const formData = new FormData(document.getElementById('modificationProfilForm'));
 
