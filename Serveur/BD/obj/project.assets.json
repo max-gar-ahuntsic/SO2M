@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-testz--v-PROPRE-FINAL-REMISE\\SO2M\\Serveur\\BD\\BD.csproj",
+      "projectUniqueName": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-testz--v-PROPRE-FINAL-REMISE-2\\SO2M\\Serveur\\BD\\BD.csproj",
       "projectName": "BD",
-      "projectPath": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-testz--v-PROPRE-FINAL-REMISE\\SO2M\\Serveur\\BD\\BD.csproj",
+      "projectPath": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-testz--v-PROPRE-FINAL-REMISE-2\\SO2M\\Serveur\\BD\\BD.csproj",
       "packagesPath": "C:\\Users\\Maxime\\.nuget\\packages\\",
-      "outputPath": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-testz--v-PROPRE-FINAL-REMISE\\SO2M\\Serveur\\BD\\obj\\",
+      "outputPath": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-testz--v-PROPRE-FINAL-REMISE-2\\SO2M\\Serveur\\BD\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
