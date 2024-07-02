@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LoqS1N+ATkVXmb0acEkq/ODXShAtPADsDxJVv93AVFlk/aCPVY07NC3fBUswfFuaC5j4y9/9v5JDh6NlPzyc3A==",
+  "dgSpecHash": "pGIEdzTkfSNdkFk8zhB+Y/kHRW2FUNJxMQYADOC5pkUd3TZjYyrZGbXzXxZVzem+6m/cypBXcijx8TAaKX68wg==",
   "success": true,
-  "projectFilePath": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-testz--v-PROPRE-FINAL-REMISE\\SO2M\\Serveur\\SO2M\\SO2M.csproj",
+  "projectFilePath": "W:\\1.55)--DEV-TC\\cours-SITE-RENCONT\\5.45)__GIT\\so2m-testz--v-PROPRE-FINAL-REMISE-2\\SO2M\\Serveur\\SO2M\\SO2M.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Maxime\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Maxime\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
